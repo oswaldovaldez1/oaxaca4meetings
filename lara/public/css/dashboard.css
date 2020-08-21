@@ -1,0 +1,7 @@
+.trasparent {
+    background: transparent !important;
+}
+
+.md-list-item-content .md-ripple {
+    padding-left: 26px;
+}

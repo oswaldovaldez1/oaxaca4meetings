@@ -1,0 +1,217 @@
+// =========================================================
+// * Vue Material Dashboard - v1.4.0
+// =========================================================
+//
+// * Product Page: https://www.creative-tim.com/product/vue-material-dashboard
+// * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+// * Licensed under MIT (https://github.com/creativetimofficial/vue-material-dashboard/blob/master/LICENSE.md)
+//
+// * Coded by Creative Tim
+//
+// =========================================================
+//
+// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+@import '~vue-material/dist/vue-material.min.css';
+
+
+//variables and mixins
+@import "md/variables";
+@import "md/mixins";
+@import "md/shadows";
+
+//plugin css
+@import "md/plugins/_perfect-scrollbar";
+
+// Core CSS
+@import "md/typography";
+@import "md/sidebar-and-main-panel";
+@import "md/buttons";
+@import "md/misc";
+@import "md/inputs";
+@import "md/fixed-plugin";
+@import "md/forms";
+@import "md/alerts";
+@import "md/tables";
+@import "md/layout";
+@import "md/checkboxes";
+@import "md/togglebutton";
+@import "md/ripples";
+@import "md/pagination";
+@import "md/pills";
+@import "md/dialogs";
+@import "md/navbars";
+@import "md/popups";
+@import "md/footers";
+
+// Fancy Stuff
+@import "md/dropdown";
+@import "md/cards";
+@import "md/tabs";
+@import "md/chartist";
+@import "md/responsive";
+
+@import "~vue2-editor/dist/vue2-editor.css";
+
+/* Import the Quill styles you want */
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+
+
+$primero: #001e42;
+$segundo: #2a4a96;
+
+
+*::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+
+}
+
+*::-webkit-scrollbar-thumb {
+    background: $segundo !important;
+    border-radius: 8px !important;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: $primero !important;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: $primero !important;
+}
+
+*::-webkit-scrollbar-track {
+    /* background: #e1e1e1; */
+    background: transparent !important;
+}
+
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-track:active {
+    /* background: #d4d4d4; */
+    background: transparent !important;
+}
+
+.md-field.md-has-textarea:not(.md-autogrow):before {
+    border-color: #0091ea !important;
+}
+
+.md-field:before {
+    background-color: #0091ea !important;
+}
+
+.md-checkbox.md-checked .md-checkbox-container:after {
+    border-color: #00c853 !important;
+
+}
+
+.md-card [data-background-color=blue-900],
+.md-card .md-tabs.md-info .md-tabs-navigation {
+    background: linear-gradient(60deg, #01579b, #01579b);
+    box-shadow: 0 12px 20px -10px rgba(0, 188, 212, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 188, 212, 0.2);
+}
+
+
+.ImgFile {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 0px;
+    opacity: 0;
+    z-index: 99;
+    top: 0px;
+
+
+}
+
+div.Img {
+    width: 130px;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+    &:hover:after {
+        transition: 0.3s;
+        font-family: "Material Icons";
+        content: "\e2c3";
+        display: inline-block;
+        width: 130px;
+        height: 49px;
+        background-color: rgba($color: #fff, $alpha: 0.3);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: #eee;
+        font-size: 30px;
+        padding-top: 9px;
+    }
+}
+
+
+$breakpoint-xs: 599px;
+$breakpoint-sm: 959px;
+$breakpoint-md: 1279px;
+$breakpoint-lg: 1919px;
+$breakpoint-xl: 1920px;
+
+@mixin media($media) {
+    @if $media==xs {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+
+    @else if $media==sm {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+
+    @else if $media==md {
+        @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+
+    @else if $media==lg {
+        @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
+            @content;
+        }
+    }
+
+    @else if $media==xl {
+        @media (min-width: $breakpoint-xl) {
+            @content;
+        }
+    }
+}
+
+.direccion-column {
+    @include media(xs) {
+        flex-direction: column-reverse;
+    }
+
+    @include media(sm) {
+        flex-direction: column-reverse;
+    }
+
+
+
+}
+
+.ql-align-right {
+    text-align: right;
+}
+
+.ql-align-center {
+    text-align: center;
+}
+
+.ql-align-justify {
+    text-align: justify;
+}
