@@ -1,0 +1,6044 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "CatamaranExtraLight";
+  src: url("fonts/CatamaranExtraLight.eot");
+  src: url("fonts/CatamaranExtraLight.eot") format("embedded-opentype"), url("fonts/CatamaranExtraLight.woff2") format("woff2"), url("fonts/CatamaranExtraLight.woff") format("woff"), url("fonts/CatamaranExtraLight.ttf") format("truetype"), url("fonts/CatamaranExtraLight.svg#CatamaranExtraLight") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranLight";
+  src: url("fonts/CatamaranLight.eot");
+  src: url("fonts/CatamaranLight.eot") format("embedded-opentype"), url("fonts/CatamaranLight.woff2") format("woff2"), url("fonts/CatamaranLight.woff") format("woff"), url("fonts/CatamaranLight.ttf") format("truetype"), url("fonts/CatamaranLight.svg#CatamaranLight") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranExtraBold";
+  src: url("fonts/CatamaranExtraBold.eot");
+  src: url("fonts/CatamaranExtraBold.eot") format("embedded-opentype"), url("fonts/CatamaranExtraBold.woff2") format("woff2"), url("fonts/CatamaranExtraBold.woff") format("woff"), url("fonts/CatamaranExtraBold.ttf") format("truetype"), url("fonts/CatamaranExtraBold.svg#CatamaranExtraBold") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranThin";
+  src: url("fonts/CatamaranThin.eot");
+  src: url("fonts/CatamaranThin.eot") format("embedded-opentype"), url("fonts/CatamaranThin.woff2") format("woff2"), url("fonts/CatamaranThin.woff") format("woff"), url("fonts/CatamaranThin.ttf") format("truetype"), url("fonts/CatamaranThin.svg#CatamaranThin") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranRegular";
+  src: url("fonts/CatamaranRegular.eot");
+  src: url("fonts/CatamaranRegular.eot") format("embedded-opentype"), url("fonts/CatamaranRegular.woff2") format("woff2"), url("fonts/CatamaranRegular.woff") format("woff"), url("fonts/CatamaranRegular.ttf") format("truetype"), url("fonts/CatamaranRegular.svg#CatamaranRegular") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranBlack";
+  src: url("fonts/CatamaranBlack.eot");
+  src: url("fonts/CatamaranBlack.eot") format("embedded-opentype"), url("fonts/CatamaranBlack.woff2") format("woff2"), url("fonts/CatamaranBlack.woff") format("woff"), url("fonts/CatamaranBlack.ttf") format("truetype"), url("fonts/CatamaranBlack.svg#CatamaranBlack") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranSemiBold";
+  src: url("fonts/CatamaranSemiBold.eot");
+  src: url("fonts/CatamaranSemiBold.eot") format("embedded-opentype"), url("fonts/CatamaranSemiBold.woff2") format("woff2"), url("fonts/CatamaranSemiBold.woff") format("woff"), url("fonts/CatamaranSemiBold.ttf") format("truetype"), url("fonts/CatamaranSemiBold.svg#CatamaranSemiBold") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranBold";
+  src: url("fonts/CatamaranBold.eot");
+  src: url("fonts/CatamaranBold.eot") format("embedded-opentype"), url("fonts/CatamaranBold.woff2") format("woff2"), url("fonts/CatamaranBold.woff") format("woff"), url("fonts/CatamaranBold.ttf") format("truetype"), url("fonts/CatamaranBold.svg#CatamaranBold") format("svg");
+}
+
+@font-face {
+  font-family: "CatamaranMedium";
+  src: url("fonts/CatamaranMedium.eot");
+  src: url("fonts/CatamaranMedium.eot") format("embedded-opentype"), url("fonts/CatamaranMedium.woff2") format("woff2"), url("fonts/CatamaranMedium.woff") format("woff"), url("fonts/CatamaranMedium.ttf") format("truetype"), url("fonts/CatamaranMedium.svg#CatamaranMedium") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #2a4a96;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #001e42;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #001e42;
+}
+
+*::-webkit-scrollbar-track {
+  /* background: #e1e1e1; */
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-track:active {
+  /* background: #d4d4d4; */
+  background: transparent !important;
+}
+
+.fl > img,
+.pg-loading-logo {
+  width: 320px;
+}
+
+#divContMenuPrincipal {
+  display: block;
+}
+
+#navbar {
+  position: relative;
+  height: 100px !important;
+  top: 0px;
+  list-style: none;
+}
+
+.navbar-nav li {
+  position: relative;
+  top: 20px;
+  height: auto;
+}
+
+.navbar-nav li a {
+  position: relative;
+  height: auto;
+  top: 0px;
+  color: #333333;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font: 24px "CatamaranMedium";
+  text-decoration: none;
+}
+
+.navbar-nav li a div {
+  text-align: center;
+  font: 20px "CatamaranMedium";
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.navbar-nav li:hover {
+  top: 20px;
+  color: #2a4a96;
+}
+
+.clsAMenuPrincipalActive {
+  top: 15px !important;
+  color: #555555;
+}
+
+.clsAMenuPrincipal {
+  color: #555555;
+}
+
+.clsAMenuPrincipalDivision {
+  width: 1px;
+  height: 35px !important;
+  background-color: #000;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #555555;
+}
+
+.sp-layer {
+  font-size: 12px;
+  right: 2%;
+  transform-origin: right bottom;
+  bottom: 10px;
+  width: auto;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) translate3d(0px, 0px, 0px);
+}
+
+.navbar-toggle {
+  background-color: transparent !important;
+}
+
+/*.navbar-toggle > span{background-color: #005da8 !important;}*/
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.affix-top {
+  top: 0px;
+  -webkit-transition: top 0.5s linear;
+  -moz-transition: top 0.5s linear;
+  -o-transition: top 0.5s linear;
+  transition: top 0.5s linear;
+}
+
+.affix {
+  top: 0px !important;
+  -webkit-transition: top 0.5s linear;
+  -moz-transition: top 0.5s linear;
+  -o-transition: top 0.5s linear;
+  transition: top 0.5s linear;
+  background-color: #ffffff !important;
+  height: 57px !important;
+  color: #000000;
+}
+
+.affix .navbar,
+.affix #divMenuPrincipal {
+  height: 57px !important;
+  min-height: 57px !important;
+}
+
+.affix #divRedes {
+  top: 3px;
+}
+
+.affix .navbar-nav li a {
+  color: #333333;
+}
+
+.affix #logo,
+.affix #aBrand,
+.affix #imgLogo {
+  width: 45px;
+  height: 45px;
+}
+
+.affix .navbar-nav li {
+  position: relative;
+  top: -5px;
+  height: 30px;
+  color: #333333;
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+.affix .navbar-nav li a {
+  position: relative;
+  height: 20px;
+  color: #333333;
+  font: 17px "RFRufoBold";
+}
+
+.affix .navbar-nav li:hover {
+  color: #ffffff !important;
+  background-color: #1f223d;
+}
+
+.affix .clsAMenuPrincipalActive {
+  top: -5px !important;
+  color: #ffffff !important;
+  background-color: #1f223d;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #2a4a96 !important;
+}
+
+.clsAMenuPrincipalActive > a {
+  color: #2a4a96 !important;
+}
+
+.fuentes {
+  font: 15px "CatamaranLight";
+}
+
+#divContMenuPrincipal {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0px;
+  background-color: transparent;
+  z-index: 901;
+}
+
+#divMenuPrincipal {
+  position: relative;
+  height: 100%;
+  top: 0px;
+  background-color: transparent;
+}
+
+#ulNavBar {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#divContButtonMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  width: 30px;
+  height: 25px;
+  display: none;
+}
+
+.clsIcoMenuTop {
+  top: 15px !important;
+}
+
+#logo {
+  position: relative;
+  width: 288px;
+  height: 150px;
+  font-size: 0;
+  line-height: 0;
+  z-index: 999;
+}
+
+#logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-indent: -4000px;
+  padding: 0 !important;
+}
+
+#imgLogo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.clsLogoIco {
+  top: -15px !important;
+}
+
+.clsLogoNormal {
+  width: 150px;
+  height: 43.5px;
+}
+
+.clsLogoResp {
+  width: 35px !important;
+  height: 61px;
+  top: 5px !important;
+}
+
+.clsImgLogoNormal {
+  width: 100% !important;
+  height: 100%;
+}
+
+.clsABrandNormal {
+  width: 100% !important;
+  height: 100%;
+}
+
+.clsImgLogoResp {
+  width: 45px !important;
+  top: -20px !important;
+}
+
+.clsABrandResp {
+  position: relative;
+  width: 35px !important;
+  top: 0px;
+}
+
+.clsSpaceLogo {
+  width: 110px;
+}
+
+.clsFLX {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.clsDisplayNone {
+  display: none;
+}
+
+.clsShow {
+  display: block;
+}
+
+.clsLeft {
+  float: left;
+}
+
+.clsRight {
+  float: right;
+}
+
+.clsNoMargin {
+  margin: 0px !important;
+}
+
+.clsNoPadding {
+  padding: 0px !important;
+}
+
+.clsNoPaddingLeft {
+  padding-left: 0px !important;
+}
+
+.clsNoPaddingRight {
+  padding-right: 0px !important;
+}
+
+.clsMarginBottom20 {
+  margin-bottom: 20px !important;
+}
+
+.clsMarginBottom30 {
+  margin-bottom: 30px !important;
+}
+
+.clsMarginBottom60 {
+  margin-bottom: 60px;
+}
+
+.clsMarginBottom100 {
+  margin-bottom: 100px;
+}
+
+.clsMarginRight10 {
+  margin-right: 10px;
+}
+
+.clsMarginRight5 {
+  margin-right: 5px;
+}
+
+.clsMarginRight3 {
+  margin-right: 3px;
+}
+
+.clsHeight1 {
+  height: 1px;
+}
+
+.clsHeight20P {
+  height: 20%;
+}
+
+.clsHeight30 {
+  height: 30px;
+}
+
+.clsHeight50 {
+  height: 50px;
+}
+
+.clsHeight100 {
+  height: 100%;
+}
+
+.gris {
+  background-color: #999;
+  height: 220px;
+}
+
+.clsNoDisplay {
+  display: none;
+}
+
+.clsZIndex10 {
+  z-index: 10;
+}
+
+.clsWidth100 {
+  width: 100%;
+}
+
+.polyfill-cover {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+b,
+strong,
+.texto-negritas {
+  font-family: "CatamaranBold";
+}
+
+/*FontAwasome Brand*/
+.fab {
+  margin: 0 20px;
+  color: #001e42;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.fab:hover {
+  color: #ffffff;
+}
+
+#divImgBackHome,
+#divImgBackInicioMod {
+  position: relative;
+  width: 100%;
+  /*height: auto;*/
+  height: 100px;
+  z-index: 100;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.container {
+  z-index: 100;
+}
+
+.clsModulo {
+  width: 100%;
+  height: 100%;
+  color: #706f6f;
+  position: relative;
+  top: -17px;
+}
+
+footer {
+  height: auto;
+  font: 12px "CatamaranRegular";
+  color: #ffffff;
+  background-color: #2a4a96;
+}
+
+.footer-nav {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  color: #42cee5;
+  margin-bottom: 5px;
+}
+
+#divWhatsApp {
+  position: fixed;
+  width: 52px;
+  height: 52px;
+  top: auto;
+  bottom: 0px;
+  right: 150px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#divWhatsApp a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#divWhatsApp i {
+  width: 100%;
+  height: 100%;
+  margin: -3px 0 0 0;
+  font-size: 60px;
+  color: #00b79b;
+}
+
+#divContainerDetFooter {
+  position: relative;
+  top: 11px;
+}
+
+#divTextCIA {
+  position: relative;
+  font: 12px "RFRufoBold";
+  color: #42cee5;
+}
+
+.clsTextLightBox {
+  position: relative;
+  font: 12px "RFRufoBold";
+  color: #42cee5;
+  text-align: center;
+}
+
+#divTextDev {
+  position: relative;
+  font: 12px "RFRufoBold";
+  color: #42cee5;
+  float: right;
+}
+
+#imgLogoDev {
+  position: relative;
+  width: 80px;
+  top: 0px;
+  float: right;
+  margin-left: 10px;
+}
+
+#divContButtonMenu {
+  position: fixed;
+  top: 25px;
+  left: 90px;
+  z-index: 2000;
+}
+
+#showLeft,
+#showRight {
+  width: 22px;
+  height: 22px;
+  background: none;
+  border: none;
+  position: relative;
+}
+
+#showLeft {
+  background-image: url("../images/ico-menu.svg");
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.clsBtnX {
+  width: 100%;
+  height: 40px;
+}
+
+#imgCloseMenu {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  left: 0px;
+}
+
+.clsAMenu {
+  position: relative;
+  /*width: 200px;*/
+}
+
+.clsOpacity1 {
+  opacity: 1 !important;
+}
+
+.clsOpacity0 {
+  opacity: 0 !important;
+}
+
+.clsContTituloSeccion {
+  width: 100%;
+  height: 140px;
+}
+
+.clsTituloSeccion {
+  font: 50px "RFRufoBold";
+  color: #333333;
+  text-align: center;
+  line-height: 90px;
+}
+
+.clsTexto {
+  font: 18px "MontserratRegular";
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.clsBlack {
+  font-family: "CatamaranBlack";
+}
+
+.clsObjInCenter {
+  width: 70%;
+  margin: 0 auto;
+  font: 18px "MontserratRegular";
+}
+
+.clsShowMovil {
+  display: none;
+}
+
+.cls-titulo-1 {
+  position: relative;
+  font: 38px "CatamaranBold";
+  color: #333333;
+  text-align: center;
+  z-index: 3;
+}
+
+.cls-titulo-2 {
+  position: relative;
+  margin-top: -55px;
+  font: 70px "CatamaranBold";
+  color: #cccccc;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+}
+
+.no-shadow {
+  text-shadow: none !important;
+}
+
+/*Inicio*/
+#inicio {
+  position: relative;
+  height: auto !important;
+  margin-bottom: 100px;
+  background-color: #747679;
+  z-index: 10;
+}
+
+#divImgBackHome {
+  position: relative;
+  height: 100vh;
+  /*!important;*/
+}
+
+#divTextoHeader {
+  position: absolute;
+  font-family: "CatamaranMedium";
+  color: #f0f8ff;
+  text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.36);
+  z-index: 999;
+}
+
+#divUnete {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  margin-top: -256px;
+  bottom: 0 !important;
+  color: #ffffff;
+  background-color: #cbad4f;
+  opacity: 0.8;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clsTextoTelefono {
+  font-family: "CatamaranLight";
+  color: #ffffff;
+}
+
+.aTelefonoInicio {
+  font-family: "CatamaranMedium";
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.aTelefonoInicio:hover {
+  color: #2a4a96;
+  text-decoration: none;
+}
+
+.clsTextoUnete {
+  font-family: "CatamaranThin";
+}
+
+.clsTextoRodea {
+  font-family: "CatamaranMedium";
+}
+
+#txtEmailUnete,
+#btnUnete {
+  position: relative;
+  float: left;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+}
+
+#txtEmailUnete {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+#btnUnete {
+  width: 40px;
+  height: 40px;
+  margin-left: -3px;
+  cursor: pointer;
+  background-image: url("../images/ico-avion.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Fin Inicio*/
+.clsPlecaSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0 !important;
+  color: #ffffff;
+  text-align: center;
+  /*background-image: linear-gradient(to right, transparent, black 80%, transparent);*/
+  background: rgba(0, 0, 0, 0.4);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 8%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 92%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(8%, rgba(0, 0, 0, 0.8)), color-stop(0%, rgba(0, 0, 0, 0)), color-stop(92%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 8%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 92%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 8%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 92%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 8%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 92%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 8%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 92%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
+}
+
+.clsPlecaSlider > img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0px;
+  left: 0px;
+}
+
+.clsSliderContInfo {
+  position: relative;
+}
+
+.clsSliderTitulo {
+  font: 32px "CatamaranLight";
+  text-transform: uppercase;
+}
+
+.clsSliderDesc {
+  position: relative;
+  font: 22px "CatamaranRegular";
+  top: -14px;
+}
+
+/*por que*/
+#por-que {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.cls-subtitulo-porque {
+  font: 22px "CatamaranLight";
+  color: #555555;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cls-division-porque {
+  border-bottom: 1px solid #9c9b9b;
+}
+
+.clsContBullet {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  background-image: url("../images/icono-oaxaca4meeting.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid #ffffff;
+}
+
+.clsContBulletNombre {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font: 18px "CatamaranLight";
+  color: #555555;
+  cursor: pointer;
+}
+
+.clsContBulletNombreActive {
+  font: 17px "CatamaranBold";
+}
+
+.clsIniSlidePorque {
+  display: none !important;
+}
+
+#por-que .sp-horizontal .sp-previous-arrow {
+  left: -50px !important;
+}
+
+#por-que .sp-horizontal .sp-next-arrow {
+  right: -50px !important;
+}
+
+#por-que .sp-previous-arrow:before,
+#por-que .sp-next-arrow:before {
+  margin-top: -14px !important;
+}
+
+#por-que .sp-previous-arrow:before,
+#por-que .sp-previous-arrow:after,
+#por-que .sp-next-arrow:before,
+#por-que .sp-next-arrow:after {
+  width: 30% !important;
+  height: 100% !important;
+  background-color: #777777 !important;
+}
+
+/*Fin por que*/
+/*acercade*/
+#acercade {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #3d7ea8;
+  background-image: url("../images/back-empresa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cls-titulo-i-1 {
+  position: relative;
+  margin-top: 60px;
+  font: 38px "CatamaranBold";
+  color: #ffffff;
+  text-align: center;
+  z-index: 3;
+}
+
+.cls-titulo-i-2 {
+  position: relative;
+  margin-top: -55px;
+  font: 70px "CatamaranBold";
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.clsTextoDMC {
+  position: relative;
+  font: 26px "CatamaranBold";
+  line-height: 28px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.clsTextoDescDMC {
+  position: relative;
+  font: 18px "CatamaranBold";
+  line-height: 24px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.clsTextoAcercaDe {
+  position: relative;
+  margin-bottom: 30px;
+  font: 14px "CatamaranLight";
+  line-height: 24px;
+  color: #ffffff;
+}
+
+#divMenuAcercaDe {
+  position: relative;
+  width: 400px;
+  margin-top: -242px;
+  float: right;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#divMenuAcercaDe > div {
+  padding: 0 !important;
+}
+
+.clsMarcoAcercaDe {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #dbdbdb;
+  font: 280px "CatamaranLight";
+  color: #dbdbdb;
+  text-align: right;
+}
+
+.clsMarcoAcercaDe-U {
+  position: relative;
+  top: -1px;
+}
+
+.clsMarcoAcercaDe-UU {
+  position: relative;
+  top: -2px;
+}
+
+.clsMarcoAcercaDe-R {
+  position: relative;
+  left: 1px;
+}
+
+.clsLinkAcerca {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.clsLinkAcerca:hover {
+  color: #cbad4f;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.clsContMenuAcercaDe {
+  z-index: 1;
+}
+
+#divContNumero-1 {
+  cursor: pointer;
+}
+
+#divContNumero-2 {
+  cursor: pointer;
+}
+
+#divContNumero-3 {
+  cursor: pointer;
+}
+
+#divContNumero-1:hover,
+#divContNumero-2:hover,
+#divContNumero-3:hover {
+  background-color: #cbad4f;
+  background-image: url("../images/back-numero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px -1px 10px 5px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px -1px 10px 5px rgba(0, 0, 0, 0.28);
+}
+
+#divNumero-1 {
+  position: relative;
+  line-height: 165px;
+  left: 21px;
+  top: 38px;
+}
+
+#divNumero-2 {
+  position: relative;
+  line-height: 165px;
+  left: 8px;
+  top: 38px;
+}
+
+#divNumero-3 {
+  position: relative;
+  line-height: 165px;
+  left: 12px;
+  top: 18px;
+}
+
+.clsAcercaDeActive {
+  display: inline-flex;
+}
+
+.clsAcercaDeDesactive {
+  display: none;
+}
+
+/*Fin acercade*/
+/*experiencias*/
+#experiencias {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  background-color: #ffffff;
+}
+
+.clsImgLogoSlide {
+  margin-right: 20px;
+  background-image: url("../images/icono-oaxaca4meeting.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.clsContSlideTituloTexto {
+  float: left;
+}
+
+#menu-viajes img {
+  width: 100%;
+}
+
+.img-viajes-espacios {
+  padding: 0px 0;
+}
+
+#experiencias .sp-horizontal .sp-previous-arrow {
+  left: -50px !important;
+}
+
+#experiencias .sp-horizontal .sp-next-arrow {
+  right: -50px !important;
+}
+
+#experiencias .sp-previous-arrow:before,
+#experiencias .sp-next-arrow:before {
+  margin-top: -14px !important;
+}
+
+#experiencias .sp-previous-arrow:before,
+#experiencias .sp-previous-arrow:after,
+#experiencias .sp-next-arrow:before,
+#experiencias .sp-next-arrow:after {
+  width: 30% !important;
+  height: 100% !important;
+  background-color: #777777 !important;
+}
+
+.contimg--experiencias {
+  position: relative;
+  width: 50%;
+}
+
+.cont-img-experiencias .image {
+  /*display: block;
+    width: 100%;
+    height: auto;*/
+}
+
+.overlay-experiencias {
+  position: absolute;
+  width: 100% !important;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*opacity: 0;*/
+  transition: 0.5s ease;
+  /*
+    background-image: url('../images/experiencias/back-black.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    */
+  /*https://www.cssmatic.com/es/gradient-generator*/
+  background: rgba(255, 255, 255, 0);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.62) 62%, rgba(0, 0, 0, 0.74) 74%, rgba(0, 0, 0, 0.84) 84%, black 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(62%, rgba(0, 0, 0, 0.62)), color-stop(74%, rgba(0, 0, 0, 0.74)), color-stop(84%, rgba(0, 0, 0, 0.84)), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.62) 62%, rgba(0, 0, 0, 0.74) 74%, rgba(0, 0, 0, 0.84) 84%, black 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.62) 62%, rgba(0, 0, 0, 0.74) 74%, rgba(0, 0, 0, 0.84) 84%, black 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.62) 62%, rgba(0, 0, 0, 0.74) 74%, rgba(0, 0, 0, 0.84) 84%, black 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.62) 62%, rgba(0, 0, 0, 0.74) 74%, rgba(0, 0, 0, 0.84) 84%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+}
+
+.oe-sofisticado {
+  height: 70%;
+}
+
+.oe-colores {
+  height: 70%;
+}
+
+.oe-mezcal {
+  height: 60%;
+}
+
+.oe-delicias {
+  height: 70%;
+}
+
+.oe-manos {
+  height: 40%;
+}
+
+.oe-moda {
+  height: 70%;
+}
+
+.cont-img-experiencias:hover .overlay-experiencias {
+  opacity: 1;
+}
+
+.text-experiencias {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.te-sofisticado {
+  top: 75%;
+}
+
+.te-colores {
+  top: 75%;
+}
+
+.te-mezcal {
+  top: 75%;
+}
+
+.te-delicias {
+  top: 80%;
+}
+
+.te-manos {
+  top: 60%;
+}
+
+.te-moda {
+  top: 80%;
+}
+
+/*-------*/
+.te-deleite {
+  top: 80%;
+}
+
+.te-cafe {
+  top: 80%;
+}
+
+.te-hilos {
+  top: 60%;
+}
+
+/*--------------*/
+.titulo-experiencia {
+  position: relative;
+  font: 18px "CatamaranBold";
+}
+
+.frase-experiencia {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+}
+
+.titulo-experiencia-deleite {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #199e45;
+}
+
+.frase-experiencia-deleite {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #199e45;
+}
+
+.titulo-experiencia-cafe {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #786053;
+}
+
+.frase-experiencia-cafe {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #786053;
+}
+
+.titulo-experiencia-hilos {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #dca02a;
+}
+
+.frase-experiencia-hilos {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #dca02a;
+}
+
+/*-------*/
+.titulo-experiencia-sofisticado {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #a135cc;
+}
+
+.frase-experiencia-sofisticado {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #a135cc;
+}
+
+.titulo-experiencia-colores {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #db5600;
+}
+
+.frase-experiencia-colores {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #db5600;
+}
+
+.titulo-experiencia-mezcal {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #467e00;
+}
+
+.frase-experiencia-mezcal {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #467e00;
+}
+
+.titulo-experiencia-delicias {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #d87e91;
+}
+
+.frase-experiencia-delicias {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #d87e91;
+}
+
+.titulo-experiencia-manos {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #0080ad;
+}
+
+.frase-experiencia-manos {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #0080ad;
+}
+
+.titulo-experiencia-moda {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #aa105f;
+}
+
+.frase-experiencia-moda {
+  position: relative;
+  margin-top: -5px;
+  font: 14px "CatamaranLight";
+  color: #aa105f;
+}
+
+/*Fin experiencias*/
+/*eventos*/
+#eventos {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #cfb355;
+}
+
+.cls-titulo-e-1 {
+  position: relative;
+  font: 38px "CatamaranBold";
+  color: #ffffff;
+  text-align: center;
+  z-index: 3;
+}
+
+.cls-titulo-e-2 {
+  position: relative;
+  margin-top: -55px;
+  font: 70px "CatamaranBold";
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#divContTituloEventos {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+}
+
+.clsContTextoEventosEspeciales {
+  position: relative;
+  width: 80%;
+  color: #fff;
+  text-shadow: 3px 1px 7px rgba(2, 2, 2, 0.5);
+}
+
+.clsContTextoEventosEspeciales p {
+  margin-bottom: 0px;
+}
+
+.clsBtnContactanos {
+  position: relative;
+  width: 180px;
+  height: 54px;
+  margin: 40px auto;
+  padding: 10px 31px;
+  background-color: #2a4a96;
+  font: 22px "CatamaranMedium";
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.clsBtnContactanos:hover {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.clsBtnContactanos:active {
+  position: relative;
+  top: 1px;
+}
+
+.col-xs-5-gbr,
+.col-sm-5-gbr,
+.col-md-5-gbr,
+.col-lg-5-gbr,
+.col-xl-5-gbr {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*Fin eventos*/
+/*Destinos*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /*opacity: 0;*/
+  display: none;
+  transition: 0.5s ease;
+  /*background-color: #000000;*/
+  background-image: url("../images/destinos/destinos_back.png");
+  background-repeat: repeat;
+}
+
+.clsContOverlay:hover .overlay {
+  /*opacity: .5;*/
+  display: block;
+}
+
+.clsDescOverlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.clsContDescDestino {
+  width: 270px;
+  height: 130px;
+  border: 1px solid #fff;
+}
+
+.clsDestinoTitulo {
+  position: relative;
+  margin-top: 15px;
+  font: 18px "CatamaranBold";
+  color: #ffffff;
+}
+
+.clsDestinoIcons {
+  position: relative;
+  width: 190px;
+  height: 32px;
+  margin: 10px auto;
+}
+
+.img-ico-destinos {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin: 0 15px 7px;
+}
+
+.clsDestinoIcoNombre {
+  font: 16px "CatamaranThin";
+  color: #ffffff;
+  display: none;
+}
+
+.a-d-1-1:hover ~ .n-1-1,
+.d-1-1:hover ~ .n-1-1 {
+  display: block;
+}
+
+.a-d-1-2:hover ~ .n-1-2,
+.d-1-2:hover ~ .n-1-2 {
+  display: block;
+}
+
+.a-d-1-3:hover ~ .n-1-3,
+.d-1-3:hover ~ .n-1-3 {
+  display: block;
+}
+
+/*Fin Destinos*/
+/*Contacto*/
+#contacto {
+  position: relative;
+  height: auto;
+  padding-bottom: 80px;
+  z-index: 1;
+}
+
+.clsContactoIzq {
+  background-color: #000;
+  opacity: 0.98;
+}
+
+.clsContactoDer {
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.clsContFormContacto {
+  position: relative;
+  height: auto;
+}
+
+.clsContBtns {
+  position: relative;
+  top: -11px;
+}
+
+.clsABtns {
+  text-decoration: none;
+  display: block;
+}
+
+.clsABtns:hover {
+  text-decoration: none;
+}
+
+.clsBtnBlog {
+  position: relative;
+  width: 183px;
+  height: 52px;
+  top: 0;
+  float: left;
+  background-image: url("../images/btn_blog.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.clsBtnBlog:hover,
+.clsBtnBlog:focus {
+  background-image: url("../images/btn_blog_hover.png");
+}
+
+.clsBtnChat {
+  position: relative;
+  width: 253px;
+  height: 52px;
+  top: 0;
+  float: right;
+  background-image: url("../images/btn_chat.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.clsBtnChat:hover,
+.clsBtnChat:focus {
+  background-image: url("../images/btn_chat_hover.png");
+}
+
+.clsTextoBlog {
+  position: relative;
+  font: 14px "CatamaranMedium";
+  color: #fff;
+}
+
+.clsTextoChat {
+  font: 14px "CatamaranMedium";
+  color: #fff;
+}
+
+.clsTextoChat a {
+  font: 14px "CatamaranMedium";
+  color: #fff;
+  text-decoration: none;
+}
+
+.clsTextoChat a:hover {
+  font: 14px "CatamaranMedium";
+  color: #fff;
+  text-decoration: none;
+}
+
+#divMapa {
+  width: 100%;
+  height: 600px;
+}
+
+#divInfoMaps {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+#divContPriContacto {
+  background-color: #ffffff;
+}
+
+#divContContacto {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#divContFRM {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  background-color: #1f223d;
+}
+
+#frmContacto {
+  position: relative;
+  margin-top: 50px;
+}
+
+.clsTituloContacto {
+  margin-bottom: 40px;
+  font: 25px "RFRufoBold";
+  color: #1f223d;
+}
+
+.clsEnviar {
+  width: 150px;
+  height: 35px;
+  padding: 5px 0;
+  display: inline-block;
+  background-color: #1f223d;
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-family: "MontserratRegular";
+  font-size: 18px;
+}
+
+.clsEnviar:hover {
+  background-color: #1f223d;
+  text-decoration: none;
+  color: #42cee5;
+}
+
+.clsEnviar:active {
+  position: relative;
+  top: 1px;
+}
+
+#divTextoDireccion {
+  font: 14px "CatamaranLight";
+  color: #ffffff;
+  text-align: center;
+}
+
+#divContTelefono {
+  position: relative;
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clsTelefono {
+  position: relative;
+  width: 100%;
+  height: 13px;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  float: left;
+  font: 13px "CatamaranLight";
+  text-align: center;
+}
+
+.aTelefono {
+  float: left;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.aTelefono:hover {
+  color: #cccccc;
+}
+
+#divContRedesContacto {
+  position: relative;
+  width: 200px;
+  height: 38px;
+  margin: 40px auto;
+}
+
+.clsRedesContacto {
+  position: relative;
+  height: 38px;
+  float: left;
+  margin-right: 15px;
+}
+
+#divUp {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+#divUp img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.clsFancibox,
+.clsFancibox:hover {
+  color: #42cee5;
+}
+
+/*Fin Contacto*/
+/*Inicio Modulos*/
+#inicio-mod {
+  position: relative;
+  height: auto !important;
+  margin-bottom: 0;
+  background-color: #747679;
+  z-index: 10;
+}
+
+/*Fin Inicio Modulos*/
+/*Nuestros Eventos*/
+#nuestros-eventos {
+  margin-top: 100px;
+}
+
+#divContTituloNuestrosEventos {
+  position: relative;
+}
+
+.cls-titulo-ne-1 {
+  position: relative;
+  font: 38px "CatamaranBlack";
+  color: #555555;
+  text-align: center;
+  line-height: 30px;
+  z-index: 3;
+}
+
+.cls-titulo-ne-2 {
+  position: relative;
+  font: 18px "CatamaranBold";
+  color: #cccccc;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.clsContImageNuestEvent {
+  position: relative;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.imgNuestrosEventos {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clsOverlayContEncapMas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+}
+
+.clsContEncapMas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.clsContImageNuestEvent:hover .clsOverlayContEncapMas {
+  opacity: 0.6;
+}
+
+.clsContImageNuestEvent:hover .clsContEncapMas {
+  opacity: 1;
+}
+
+.clsEncapMas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textCorchete {
+  font: 44px "CatamaranLight";
+}
+
+.textMas {
+  font: 22px "CatamaranLight";
+}
+
+#divContInfoNuestrosEventos {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 434px !important;
+  margin-bottom: 30px;
+}
+
+.clsBackColorNuEv {
+  min-height: 275px;
+  background-color: #c4a346;
+  background-image: url("../images/eventos/back-info-nu-ev.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.clsContTextoNuestEvent {
+  position: relative;
+  /*    width: 85%;*/
+}
+
+.clsTextoInfo {
+  position: relative;
+  font: 18px "CatamaranBold";
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.clsPieTexto {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 6%;
+  font: 24px "CatamaranRegular";
+  color: #fff;
+  text-align: left;
+  line-height: 28px;
+  text-align: center;
+}
+
+.clsTextoInfo-1 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-1 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-2 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-2 {
+  font: 15px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-3 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-3 {
+  font: 16px "CatamaranRegular" !important;
+  line-height: 20px !important;
+}
+
+.clsTextoInfo-4 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-4 {
+  width: 90%;
+  font: 16px "CatamaranRegular" !important;
+  line-height: 22px !important;
+}
+
+.clsTextoInfo-5 {
+  font: 26px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-5 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-6 {
+  font: 22px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-6 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-7 {
+  font: 22px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-7 {
+  font: 16px "CatamaranRegular" !important;
+  line-height: 22px !important;
+}
+
+.clsTextoInfo-8 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-8 {
+  font: 16px "CatamaranRegular" !important;
+  line-height: 22px !important;
+}
+
+.clsTextoInfo-9 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-9 {
+  font: 16px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-10 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-10 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-11 {
+  font: 18px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-11 {
+  font: 22px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-12 {
+  font: 24px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-12 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-13 {
+  font: 22px "CatamaranBold" !important;
+  line-height: 24px !important;
+}
+
+.clsPieTexto-13 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-14 {
+  font: 22px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-14 {
+  font: 15px "CatamaranRegular" !important;
+  line-height: 20px !important;
+}
+
+.clsTextoInfo-15 {
+  font: 22px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-15 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+.clsTextoInfo-16 {
+  font: 18px "CatamaranBold" !important;
+  line-height: 28px !important;
+}
+
+.clsPieTexto-16 {
+  font: 18px "CatamaranRegular" !important;
+  line-height: 24px !important;
+}
+
+/*Fin Nuestros Eventos*/
+/*Experiencias*/
+#divContImgInt {
+  position: absolute;
+  bottom: 0;
+}
+
+#viajes img {
+  width: 100%;
+}
+
+.texto-viajes {
+  font: 30px "CatamaranLight";
+  color: #494949;
+}
+
+.img-viajes-espacios {
+  padding: 0px 0;
+}
+
+.clsBackGris {
+  background-color: #ececec;
+}
+
+.ico-brand-viajes {
+  width: 80px !important;
+}
+
+.clsViajesTitulo {
+  font: 40px "CatamaranBold";
+  line-height: 30px;
+  color: #8f175c;
+  text-transform: uppercase;
+}
+
+.clsViajesSubtitulo {
+  font: 20px "CatamaranBold";
+  color: #555555;
+}
+
+.clsTextoInteriores {
+  margin-bottom: 100px;
+  font: 20px "CatamaranLight";
+  color: #555555;
+}
+
+.clsTextoInteriores b {
+  font: 20px "CatamaranBold";
+  color: #555555;
+}
+
+/*Fin Experiencias*/
+/*Destinos*/
+.clsContInfoDestino,
+.clsContInfoDescDestino {
+  width: 100%;
+  height: auto;
+}
+
+.clsColorGrisNuestrosDestinos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+}
+
+.clsColorAzulNuestrosDestinos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #2a4a96;
+}
+
+.clsItemDestino p {
+  margin-bottom: 0px;
+}
+
+.clsLiContImgMenuDestinos-conectividad:hover ~ .clsContInfoDescDestino {
+  background-color: aqua !important;
+}
+
+.clsLiContImgMenuDestinos-conectividad > div,
+.clsLiContImgMenuDestinos-hospedaje > div,
+.clsLiContImgMenuDestinos-espacios > div,
+.clsLiContImgMenuDestinos-actividades > div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.clsLiContImgMenuDestinos-conectividad > div {
+  background-image: url("../images/destinos/conectividad-int.svg");
+}
+
+.clsLiContImgMenuDestinos-hospedaje > div {
+  background-image: url("../images/destinos/hospedaje-int.svg");
+}
+
+.clsLiContImgMenuDestinos-espacios > div {
+  background-image: url("../images/destinos/espacios-int.svg");
+}
+
+.clsLiContImgMenuDestinos-actividades > div {
+  background-image: url("../images/destinos/actividades-int.svg");
+}
+
+.clsLiContImgMenuDestinos-conectividad > div.imgMenuActive,
+.clsLiContImgMenuDestinos-conectividad > div.imgMenuActiveSel {
+  background-image: url("../images/destinos/conectividad-int-over.svg");
+}
+
+.clsLiContImgMenuDestinos-hospedaje > div.imgMenuActive,
+.clsLiContImgMenuDestinos-hospedaje > div.imgMenuActiveSel {
+  background-image: url("../images/destinos/hospedaje-int-over.svg");
+}
+
+.clsLiContImgMenuDestinos-espacios > div.imgMenuActive,
+.clsLiContImgMenuDestinos-espacios > div.imgMenuActiveSel {
+  background-image: url("../images/destinos/espacios-int-over.svg");
+}
+
+.clsLiContImgMenuDestinos-actividades > div.imgMenuActive,
+.clsLiContImgMenuDestinos-actividades > div.imgMenuActiveSel {
+  background-image: url("../images/destinos/actividades-int-over.svg");
+}
+
+/*Fin Destinos*/
+/*Blog*/
+.cont-list-posts {
+  margin-top: 70px;
+}
+
+.cont-item-menu-blog_1 .overlay-img-menu-blog {
+  position: absolute;
+  width: 99.4% !important;
+  height: 99%;
+  top: 0.5%;
+  left: 0.3%;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.cont-item-menu-blog_2 .overlay-img-menu-blog {
+  position: absolute;
+  width: 98% !important;
+  height: 98%;
+  top: 1%;
+  left: 1%;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.cont-item-menu-blog_1:hover .overlay-img-menu-blog,
+.cont-item-menu-blog_2:hover .overlay-img-menu-blog {
+  opacity: 1;
+}
+
+.cont-item-menu-blog_1,
+.cont-item-menu-blog_2 {
+  width: 100%;
+}
+
+.cont-item-menu-blog_1 img,
+.cont-item-menu-blog_2 img {
+  width: 100%;
+}
+
+.clsRowNoticias hr {
+  margin-bottom: 30px;
+  background-color: #c6c6c6;
+}
+
+.clsRowNoticias .cont-titulo-post a,
+#divPublicacion .cont-titulo-post {
+  margin-bottom: 30px;
+  font-family: "CatamaranBold";
+  color: #555555;
+}
+
+.clsRowNoticias .cont-titulo-post a:hover {
+  text-decoration: none;
+}
+
+.clsRowNoticias .cont-sub-titulo-post,
+#divPublicacion .cont-sub-titulo-post {
+  margin-bottom: 30px;
+  font-family: "CatamaranRegular";
+  color: #2a4a96;
+}
+
+.ico-bullet-blog {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  margin-right: 5px;
+}
+
+.clsImgPublicacionList {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.clsNota {
+  margin-bottom: 30px;
+  font-family: "CatamaranRegular";
+  color: #555555;
+}
+
+.cont-fechas-post {
+  position: relative;
+  width: 70%;
+  height: auto;
+  text-align: right;
+}
+
+.post-anio {
+  font-family: "CatamaranMedium";
+  color: #cccccc;
+}
+
+.post-mes {
+  font-family: "CatamaranMedium";
+  color: #555555;
+}
+
+.post-dia {
+  font-family: "CatamaranMedium";
+  color: #555555;
+}
+
+.clsContFechasBlog {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  padding-bottom: 20px;
+  background-color: #eeeeee;
+}
+
+.cont-leer-mas {
+  margin-bottom: 50px;
+}
+
+.link-leer-mas {
+  text-decoration: none;
+  font-family: "CatamaranLight";
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.link-leer-mas:hover {
+  text-decoration: none;
+  font-family: "CatamaranLight";
+  color: #cbad4f;
+}
+
+.img-menu-blog-footer {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.cont-blog-contacto {
+  position: relative;
+}
+
+.cont-blog-contacto a {
+  font-family: "CatamaranBold";
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cont-blog-contacto a:hover {
+  color: #2a4a96;
+  text-decoration: none;
+}
+
+.titulo-entradas-blog {
+  padding: 20px 10px 0px;
+  font: 28px "CatamaranBold";
+  color: #555555;
+}
+
+.card {
+  background: transparent !important;
+  border: none !important;
+}
+
+.card-header {
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.card-body {
+  padding: 0px 30px !important;
+}
+
+.btn-link:hover {
+  color: #6d6d6d;
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn_entradas {
+  width: 100%;
+  border: none;
+  border-radius: 0 !important;
+  text-align: left;
+  color: #6d6d6d;
+  text-decoration: none !important;
+}
+
+.btn_entradas_active {
+  border-left: 2px solid #d8af46 !important;
+}
+
+.btn_entradas span {
+  float: right;
+}
+
+#accordion {
+  margin-bottom: 20px;
+}
+
+.cont-mes-publicacion {
+  margin-bottom: 5px;
+}
+
+.cont-mes-publicacion a {
+  width: 100%;
+  text-align: left;
+  color: #6d6d6d;
+  text-decoration: none !important;
+}
+
+.cont-mes-publicacion a:hover {
+  color: #6d6d6d;
+  text-decoration: none !important;
+}
+
+#divGaleriaPost {
+  margin-bottom: 50px;
+}
+
+#divFechaPublicacion {
+  position: relative;
+  background-color: #d1a53e;
+}
+
+.post-anio-read {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  font-family: "CatamaranRegular";
+  color: #ffffff;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.post-mes-read,
+.post-dia-read {
+  position: relative;
+  font-family: "CatamaranRegular";
+  color: #ffffff;
+}
+
+/*Fin Blog*/
+@media (min-width: 300px) {
+  /*Contacto*/
+  #divFacebookContacto {
+    margin-left: 20%;
+  }
+  .clsRedesContacto {
+    margin-right: 15px;
+  }
+  /*Fin Contacto*/
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .clsViajesSubtitulo {
+    font-size: 16px;
+  }
+  .clsContTextoNuestEvent {
+    width: 72%;
+  }
+  .sp-layer {
+    font-size: 8px;
+    bottom: 5px;
+  }
+  .clsBtnBlog {
+    width: 84%;
+    height: 32px;
+  }
+  .clsBtnChat {
+    width: 110%;
+    height: 32px;
+  }
+  #nuestros-eventos {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .clsContTextoNuestEvent {
+    width: 85%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .clsContTextoNuestEvent {
+    width: 85%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 479px) {
+  .clsContTextoNuestEvent {
+    width: 72%;
+  }
+  .te-sofisticado {
+    top: 70%;
+  }
+  .te-colores {
+    top: 70%;
+  }
+  .te-mezcal {
+    top: 70%;
+  }
+  .te-delicias {
+    top: 80%;
+  }
+  .te-manos {
+    top: 60%;
+  }
+  .te-moda {
+    top: 70%;
+  }
+  /*-------*/
+  .te-deleite {
+    top: 80%;
+  }
+  .te-cafe {
+    top: 80%;
+  }
+  .te-hilos {
+    top: 60%;
+  }
+  /*-------*/
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .clsHiddenMovil {
+    display: none !important;
+  }
+  .clsShowMovil {
+    display: block !important;
+  }
+  .clsPaddingMovil {
+    padding: 15px !important;
+  }
+  #divContMenuPrincipal {
+    height: 80px;
+  }
+  #divMenuPrincipal {
+    display: block !important;
+  }
+  #divContButtonMenu {
+    display: block !important;
+  }
+  .navbar-header {
+    height: 90px;
+  }
+  #navbar {
+    display: none !important;
+  }
+  .navbar-nav li a div {
+    font: 10px "CatamaranMedium";
+    line-height: 10px;
+  }
+  #ulNavBar {
+    margin-top: -60px;
+  }
+  #logo {
+    width: 120px;
+    height: 57px;
+    margin-top: -30px !important;
+  }
+  #divTextoHeader {
+    width: 600px;
+    top: 100px;
+    left: 15px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  #divUnete {
+    height: 120px;
+    margin-top: 0px;
+  }
+  #divUnete .container {
+    width: 95%;
+  }
+  .imgIcoUnete {
+    width: 90px;
+    height: auto;
+  }
+  .clsMarginTopTextoUnete {
+    margin-top: 20px;
+  }
+  .clsTextoUnete {
+    font-size: 20px;
+  }
+  .clsTextoRodea {
+    font-size: 11px;
+  }
+  #txtEmailUnete {
+    width: 150px;
+    height: 35px;
+  }
+  #btnUnete {
+    width: 35px;
+    height: 35px;
+  }
+  .clsExperienciasMarginTopMovil {
+    margin-top: -6px;
+  }
+  .clsTextoInteriores {
+    margin-bottom: 60px;
+    font: 18px "CatamaranLight";
+    color: #555555;
+    line-height: 25px;
+  }
+  .overlay-experiencias {
+    opacity: 1;
+  }
+  .overlay-img-menu-blog {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+  .clsHiddenTablet {
+    display: none !important;
+  }
+  .clsShowTablet {
+    display: block !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #divContButtonMenu {
+    top: 0px;
+    left: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+  .clsObjInCenter {
+    width: 100%;
+    font-size: 16px;
+  }
+  #divTextoHeader {
+    width: 90%;
+    top: 58%;
+    left: 20px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  #divTextCIA {
+    font: 10px "RFRufoBold";
+  }
+  #divTextDev {
+    display: none;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  #divTextoHeader {
+    width: 80%;
+    top: 40%;
+    left: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+/*@media(min-width:768px) and (max-width:991px) {*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  #divContMenuPrincipal {
+    top: -35px;
+  }
+  #navbar {
+    top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-header {
+    height: 140px;
+  }
+  .navbar-nav li a div {
+    font: 10px "CatamaranMedium";
+    line-height: 10px;
+  }
+  #ulNavBar {
+    width: 90%;
+    margin-top: -80px;
+  }
+  #logo {
+    width: 150px;
+    height: 71px;
+    margin-top: 0 !important;
+  }
+  #divTextoHeader {
+    width: 600px;
+    top: 190px;
+    left: 100px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  #divUnete {
+    height: 100px;
+    margin-top: -100px;
+  }
+  .imgIcoUnete {
+    width: 70px;
+    height: auto;
+  }
+  .clsMarginTopTextoUnete {
+    margin-top: 5px;
+  }
+  .clsTextoUnete {
+    font-size: 24px;
+  }
+  .clsTextoRodea {
+    font-size: 16px;
+  }
+  #txtEmailUnete {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #ffffff;
+  }
+  #btnUnete {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    margin-left: -2px;
+  }
+}
+
+/*
+@media(min-width:992px) and (max-width:1023px) {
+    .navbar-nav li a {
+        padding-left: 8px;
+        padding-right: 8px;
+        font: 14px 'RFRufoBold' !important;
+    }
+    .clsTituloSeccion {
+        font-size: 23px;
+    }
+    #divTextoHeader {
+        width: 390px;
+        top: -650px;
+        left: 30px;
+        font-size: 28px;
+    }
+}
+*/
+@media (min-width: 1024px) and (max-width: 1199px) {
+  #navbar {
+    top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-header {
+    height: 140px;
+  }
+  .navbar-nav li a div {
+    font: 10px "CatamaranMedium";
+    line-height: 10px;
+  }
+  #ulNavBar {
+    width: 90%;
+    margin-top: -30px;
+  }
+  #logo {
+    width: 200px;
+    height: 95px;
+  }
+  #divTextoHeader {
+    width: 600px;
+    top: 280px;
+    left: 100px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  #divUnete {
+    height: 120px;
+    margin-top: -120px;
+  }
+  .imgIcoUnete {
+    width: 90px;
+    height: auto;
+  }
+  .clsMarginTopTextoUnete {
+    margin-top: 10px;
+  }
+  .clsTextoUnete {
+    font-size: 26px;
+  }
+  .clsTextoRodea {
+    font-size: 18px;
+  }
+  #txtEmailUnete {
+    width: 200px;
+    height: 35px;
+  }
+  #btnUnete {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #navbar {
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-header {
+    height: 140px;
+  }
+  .navbar-nav li a div {
+    font: 12px "CatamaranMedium";
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+  #ulNavBar {
+    width: 90%;
+    margin-top: -20px;
+  }
+  #logo {
+    width: 220px;
+    height: 104px;
+  }
+  #divTextoHeader {
+    width: 800px;
+    top: 300px;
+    left: 140px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  #divUnete {
+    height: 180px;
+    margin-top: -180px;
+  }
+  .imgIcoUnete {
+    width: 130px;
+    height: auto;
+  }
+  .clsMarginTopTextoUnete {
+    margin-top: 15px;
+  }
+  .clsTextoUnete {
+    font-size: 40px;
+  }
+  .clsTextoRodea {
+    font-size: 25px;
+  }
+  .clsTextoInfo {
+    position: relative;
+    font: 30px "CatamaranBold";
+    line-height: 42px;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+  #navbar {
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-header {
+    height: 150px;
+  }
+  .navbar-nav li a div {
+    font: 14px "CatamaranMedium";
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  #ulNavBar {
+    width: 90%;
+    margin-top: -20px;
+  }
+  #logo {
+    width: 240px;
+    height: 114px;
+  }
+  #divTextoHeader {
+    width: 800px;
+    top: 300px;
+    left: 140px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #divUnete {
+    height: 200px;
+    margin-top: -200px;
+  }
+  .imgIcoUnete {
+    width: 150px;
+    height: auto;
+  }
+  .clsMarginTopTextoUnete {
+    margin-top: 12px;
+  }
+  .clsTextoUnete {
+    font-size: 45px;
+  }
+  .clsTextoRodea {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .clsTextoInfo {
+    position: relative;
+    font: 30px "CatamaranBold";
+    line-height: 42px;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1999px) {
+  #navbar {
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-nav li a div {
+    font: 16px "CatamaranMedium";
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  #ulNavBar {
+    width: 90%;
+    margin-top: -20px;
+  }
+  #logo {
+    width: 285px;
+    height: 135px;
+  }
+  #divTextoHeader {
+    width: 1200px;
+    top: 40%;
+    left: 10%;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  #divUnete {
+    height: 256px;
+    margin-top: -256px;
+  }
+  .imgIcoUnete {
+    width: 165px;
+    height: auto;
+  }
+  .clsMarginTopTextoUnete {
+    margin-top: 12px;
+  }
+  .clsTextoUnete {
+    font-size: 50px;
+  }
+  .clsTextoRodea {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .clsTextoInfo {
+    position: relative;
+    font: 30px "CatamaranBold";
+    line-height: 42px;
+    color: #fff;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 5000px) {
+  #navbar {
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-nav li a div {
+    font: 18px "CatamaranMedium";
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  #ulNavBar {
+    width: 90%;
+    margin-top: -20px;
+  }
+  #logo {
+    width: 285px;
+    height: 135px;
+  }
+  #divTextoHeader {
+    width: 1200px;
+    top: 40%;
+    left: 10%;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  #divUnete {
+    height: 256px;
+    margin-top: -256px;
+  }
+  .imgIcoUnete {
+    width: 165px;
+    height: auto;
+  }
+  .clsMarginTopTextoUnete {
+    margin-top: 15px;
+  }
+  .clsTextoUnete {
+    font-size: 50px;
+  }
+  .clsTextoRodea {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .clsTextoInfo {
+    position: relative;
+    font: 30px "CatamaranBold";
+    line-height: 42px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 375px) {
+  .fuentes {
+    font: 12px "CatamaranLight";
+  }
+}
+
+@media (min-width: 300px) {
+  #inicio {
+    margin-bottom: 30px;
+  }
+  .clsSliderTitulo {
+    font: 14px "CatamaranLight";
+    text-transform: none;
+    font-size: 10px;
+  }
+  .sp-padding {
+    padding: 0px 10px !important;
+  }
+  #acercade {
+    height: 680px;
+  }
+  .clsContMenuAcercaDe {
+    margin-right: 0;
+    margin-left: 0;
+    padding: inherit;
+  }
+  #divMenuAcercaDe {
+    width: 100%;
+    margin-top: -132px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    float: left;
+  }
+  #divContAcercaDeDet {
+    position: relative;
+    top: 100px;
+  }
+  .cls-titulo-1 {
+    font-size: 28px;
+  }
+  .cls-titulo-2,
+.cls-titulo-e-2 {
+    font-size: 40px;
+    margin-top: -35px;
+  }
+  #acercade .cls-titulo-i-1 {
+    font-size: 28px;
+    margin-top: 10px !important;
+  }
+  #acercade .cls-titulo-i-2 {
+    font-size: 40px;
+    margin-top: -35px;
+    margin-bottom: 30px !important;
+  }
+  .clsMarginTituloAcercaDe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .clsMarcoAcercaDe {
+    width: 160px;
+    height: 100px;
+    font: 100px "CatamaranLight";
+  }
+  #divNumero-1 {
+    line-height: 165px;
+    left: 8px;
+    top: -12px;
+  }
+  #divNumero-2 {
+    line-height: 165px;
+    left: 5px;
+    top: -12px;
+  }
+  #divNumero-3 {
+    line-height: 165px;
+    left: 5px;
+    top: -18px;
+  }
+  .clsMarcoAcercaDe-R {
+    left: 0;
+  }
+  .clsMarcoAcercaDe-U {
+    top: 0;
+  }
+  .clsMarcoAcercaDe-UU {
+    top: 0;
+  }
+  #por-que .sp-horizontal .sp-previous-arrow {
+    left: 10px !important;
+  }
+  #por-que .sp-horizontal .sp-next-arrow {
+    right: 10px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-previous-arrow:after,
+#por-que .sp-next-arrow:before,
+#por-que .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #ffffff !important;
+  }
+  #experiencias .sp-horizontal .sp-previous-arrow {
+    left: 0px !important;
+  }
+  #experiencias .sp-horizontal .sp-next-arrow {
+    right: 0px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-previous-arrow:after,
+#experiencias .sp-next-arrow:before,
+#experiencias .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #777777 !important;
+  }
+  /*Eventos*/
+  .clsContTextoEventosEspeciales {
+    position: absolute;
+    width: 90%;
+    margin: 0 !important;
+    /*font: 18px 'CatamaranRegular';*/
+    font: 16px "CatamaranLight";
+    line-height: 24px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .col-xs-5-gbr {
+    width: 20%;
+    max-width: 20%;
+    flex: 0 0 20%;
+    float: left;
+  }
+  /*Fin Eventos*/
+  /*FrmContacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    left: 0%;
+    margin: 0px auto;
+    overflow: auto;
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .cont-text-hola {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  .text-hola {
+    font: 18px "CatamaranBold";
+    color: #cfb355;
+  }
+  .text-deja-msj {
+    font: 18px "CatamaranRegular";
+    color: #fff;
+  }
+  .text-contacto {
+    position: relative;
+    top: 15%;
+    right: 20%;
+    font: 50px "CatamaranBlack";
+    color: #555;
+    text-align: right;
+    line-height: 45px;
+    opacity: 0.5;
+  }
+  .clsContFormContacto {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #frmContacto input,
+#frmContacto textarea {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font: 14px "CatamaranLight";
+    color: #fff;
+  }
+  .frm-fields {
+    font: 14px "CatamaranLight";
+    color: #fff;
+    line-height: 16px;
+  }
+  .cont-text-campos {
+    position: absolute;
+    bottom: 0;
+    font: 14px "CatamaranLight";
+    color: #cfb355;
+  }
+  .cont-btn-contacto,
+.btn-enviar {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .cont-btn-contacto:hover,
+.btn-enviar:hover {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    color: #cfb355;
+  }
+  .cont-btn-contacto > div {
+    float: left;
+    margin-right: 5px;
+  }
+  .cont-btn-contacto > img {
+    position: relative;
+    margin-top: 5px;
+  }
+  /*Fin FrmContacto*/
+  /*contacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 100%;
+    min-height: 400px;
+    height: 110vh;
+    top: 0%;
+    left: 0%;
+    /*margin: 0px auto 93px -35%;*/
+    margin: 0 !important;
+    /*transform: translate(-50%, -41%);
+        -webkit-transform: translate(-50%, -41%);*/
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .clsContactoDer {
+    background-color: #000;
+    opacity: 1;
+  }
+  .clsCloseContacto {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 99;
+  }
+  .clsCloseContacto img {
+    width: 100%;
+    height: auto;
+  }
+  .clsContPriMsjContacto {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    transform: translate(5%, 500%);
+    -webkit-transform: translate(5%, 500%);
+  }
+  .clsRespGracias {
+    margin-top: 10px;
+    margin-left: 10px;
+    font: 20px "CatamaranBold";
+    line-height: 30px;
+    color: #9c9b9b;
+  }
+  .clsRespMsj {
+    margin-left: 10px;
+    font: 14px "CatamaranMedium";
+    color: #9c9b9b;
+  }
+  /*contacto*/
+  /*Destinos*/
+  .clsContInfoDestino,
+.clsContInfoDescDestino {
+    min-height: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 60px;
+  }
+  .clsContInfoDescDestino {
+    color: #ffffff;
+  }
+  .clsContTituloLogo {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+  .clsTituloNuestrosDestinos {
+    position: relative;
+    margin-right: 20px;
+    font: 44px "CatamaranBold";
+    color: #bfbbbd;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos img {
+    width: 100%;
+    height: auto;
+  }
+  .clsContDescNuestrosDestinos {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    font: 16px "CatamaranLight";
+    line-height: 23px;
+  }
+  .clsContDescNuestrosDestinos p {
+    margin-bottom: 0px;
+  }
+  .clsTituloItemDestino {
+    font: 32px "CatamaranSemiBold";
+    margin-bottom: 40px;
+  }
+  .clsUlDescDestinos {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font: 17px "CatamaranLight";
+  }
+  .clsUlDescDestinos li {
+    padding-left: 1em;
+    text-indent: -0.7em;
+  }
+  .clsUlDescDestinos li::before {
+    content: "• ";
+    color: #cbad4f;
+    font: 18px "CatamaranBold";
+  }
+  .clsContInfoDescDestino {
+    position: relative;
+    margin-top: 80px;
+  }
+  .clsTextoPieItemDestino {
+    font: 17px "CatamaranSemiBold";
+  }
+  .clsContBotonesDestino {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: -60px;
+    z-index: 999;
+  }
+  .clsContBotonesDestino > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .clsContBotonesDestino > ul > li {
+    width: 25%;
+    height: 60px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+  .clsContBotonesDestino > ul > li:hover {
+    width: 25%;
+    height: 60px;
+    background-color: #cbad4f;
+  }
+  .img-ico-destinos {
+    position: relative;
+    width: 26%;
+    height: 80%;
+    float: left;
+    margin: 0 auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .liActive {
+    width: 25% !important;
+    height: 60px !important;
+    background-color: #cbad4f !important;
+  }
+  /*Fin Destinos*/
+  /*Viajes*/
+  .mt-header-viajes {
+    margin-top: 50px;
+  }
+  .mb-header-viajes {
+    margin-bottom: 30px;
+  }
+  /*Fin Viajes*/
+  /*Blog*/
+  .post-dia {
+    font-size: 28px;
+  }
+  .post-mes {
+    font-size: 22px;
+    margin-bottom: -20px;
+  }
+  .post-anio {
+    font-size: 18px;
+    margin-bottom: -10px;
+  }
+  .cont-titulo-post {
+    font-size: 20px;
+  }
+  .cont-sub-titulo-post {
+    font-size: 14px;
+  }
+  .clsNota {
+    font-size: 13px;
+  }
+  .link-leer-mas {
+    font-size: 12px;
+  }
+  .cont-blog-contacto {
+    position: relative;
+    top: -25%;
+    width: 200px;
+    height: auto;
+    right: 1%;
+    margin-bottom: 0px;
+    text-align: right;
+    float: right;
+    /*background-image: url('../images/contacto/banner_contactanos.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;*/
+  }
+  .cont-blog-contacto a {
+    font-size: 14px !important;
+  }
+  #divFechaPublicacion {
+    width: 75px;
+    height: 60px;
+    top: -20px;
+    margin-top: -80px;
+  }
+  .post-anio-read {
+    top: -15px;
+    left: -15px;
+    font-size: 20px !important;
+  }
+  .post-mes-read,
+.post-dia-read {
+    top: -30px;
+    left: 30px;
+    margin-bottom: -15px !important;
+    font-size: 20px !important;
+  }
+  /*Fin Blog*/
+}
+
+@media (max-width: 576px) {
+  /*Eventos*/
+  .col-xs-5-gbr {
+    width: 20%;
+    max-width: 20%;
+    flex: 0 0 20%;
+    float: left;
+  }
+  /*Fin Eventos*/
+}
+
+@media (min-width: 576px) {
+  .sp-layer {
+    font-size: 6px;
+  }
+  /*Eventos*/
+  .col-sm-5-gbr {
+    width: 20%;
+    max-width: 20%;
+    flex: 0 0 20%;
+    float: left;
+  }
+  /*Fin Eventos*/
+}
+
+@media (min-width: 768px) {
+  .sp-layer {
+    font-size: 6px;
+  }
+  #divImgBackInicioMod {
+    height: 160px !important;
+  }
+  .cls-titulo-1 {
+    font-size: 38px;
+  }
+  .cls-titulo-2 {
+    font-size: 70px;
+    margin-top: -55px;
+  }
+  #acercade .cls-titulo-i-1 {
+    font-size: 38px;
+  }
+  #acercade .cls-titulo-i-2 {
+    font-size: 70px;
+    margin-top: -55px;
+  }
+  /*porque*/
+  #por-que .container {
+    max-width: 85% !important;
+  }
+  #por-que .sp-horizontal .sp-previous-arrow {
+    left: -40px !important;
+  }
+  #por-que .sp-horizontal .sp-next-arrow {
+    right: -40px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-previous-arrow:after,
+#por-que .sp-next-arrow:before,
+#por-que .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #777777 !important;
+  }
+  .clsSliderTitulo {
+    font: 20px "CatamaranLight";
+    text-transform: none;
+  }
+  /*Fin porque*/
+  /*acercade*/
+  #acercade {
+    height: 511px;
+  }
+  .cls-titulo-i-1 {
+    margin-top: 10px;
+  }
+  .clsAcercaDeMarginBottom {
+    margin-bottom: 0px;
+  }
+  #divContAcercaDeDet {
+    position: relative;
+    top: -60px;
+  }
+  .clsContMenuAcercaDe {
+    padding-left: 0px;
+  }
+  #divMenuAcercaDe {
+    width: 170px;
+    margin-top: -103px;
+    margin-right: 0px;
+    float: right;
+  }
+  .clsMarcoAcercaDe {
+    width: 170px;
+    height: 171px;
+    font: 210px "CatamaranLight";
+  }
+  #divNumero-1 {
+    line-height: 165px;
+    left: 21px;
+    top: 27px;
+  }
+  #divNumero-2 {
+    line-height: 165px;
+    left: 8px;
+    top: 27px;
+  }
+  #divNumero-3 {
+    line-height: 165px;
+    left: 12px;
+    top: 11px;
+  }
+  .clsMarcoAcercaDe-R {
+    left: 0;
+  }
+  .clsMarcoAcercaDe-U {
+    top: -1px;
+  }
+  .clsMarcoAcercaDe-UU {
+    top: -2px;
+  }
+  /*Fin acercade*/
+  /*Viajes*/
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 80%;
+    top: 120%;
+    margin-top: -800px;
+    margin-left: 30%;
+    z-index: 999;
+  }
+  /*Fin Viajes*/
+  /*experiencias*/
+  #experiencias .container {
+    max-width: 85% !important;
+  }
+  .clsSlideTituloExperiencias {
+    width: 50%;
+  }
+  .clsImgLogoSlide {
+    width: 80px;
+    height: 80px;
+  }
+  .clsContSlideTituloTexto-1 {
+    font: 32px "CatamaranBold";
+    color: #555555;
+  }
+  .clsContSlideTituloTexto-2 {
+    position: relative;
+    top: -10px;
+    font: 18px "CatamaranBold";
+    color: #555555;
+  }
+  .clsImgSlideExperiencias {
+    width: 360px;
+    height: auto;
+  }
+  .clsImgSlideExperiencias > img {
+    width: 100%;
+  }
+  .clsSlideTextoExperiencias {
+    position: absolute !important;
+    width: 40%;
+    text-align: right;
+    top: 30% !important;
+    left: 10% !important;
+  }
+  #experiencias .sp-horizontal .sp-previous-arrow {
+    left: -50px !important;
+  }
+  #experiencias .sp-horizontal .sp-next-arrow {
+    right: -50px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-previous-arrow:after,
+#experiencias .sp-next-arrow:before,
+#experiencias .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #777777 !important;
+  }
+  /*Fin experiencias*/
+  /*Eventos*/
+  .clsContTextoEventosEspeciales {
+    position: absolute;
+    width: 90%;
+    margin: 0 !important;
+    font: 24px "CatamaranRegular";
+    line-height: 40px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .col-md-5-gbr {
+    width: 20%;
+    max-width: 20%;
+    flex: 0 0 20%;
+    float: left;
+  }
+  /*Fin Eventos*/
+  /*FrmContacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    left: 0%;
+    margin: 0px auto;
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .cont-text-hola {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  .text-hola {
+    font: 18px "CatamaranBold";
+    color: #cfb355;
+  }
+  .text-deja-msj {
+    font: 18px "CatamaranRegular";
+    color: #fff;
+  }
+  .text-contacto {
+    position: relative;
+    top: 15%;
+    right: 20%;
+    font: 61px "CatamaranBlack";
+    color: #555;
+    text-align: right;
+    line-height: 70px;
+    opacity: 0.5;
+  }
+  .clsContFormContacto {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #frmContacto input,
+#frmContacto textarea {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font: 14px "CatamaranLight";
+    color: #fff;
+  }
+  .frm-fields {
+    font: 14px "CatamaranLight";
+    color: #fff;
+    line-height: 16px;
+  }
+  .cont-text-campos {
+    position: absolute;
+    bottom: 0;
+    font: 14px "CatamaranLight";
+    color: #cfb355;
+  }
+  .cont-btn-contacto,
+.btn-enviar {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .cont-btn-contacto:hover,
+.btn-enviar:hover {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    color: #cfb355;
+  }
+  .cont-btn-contacto > div {
+    float: left;
+    margin-right: 5px;
+  }
+  .cont-btn-contacto > img {
+    position: relative;
+    margin-top: 5px;
+  }
+  /*Fin FrmContacto*/
+  /*contacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 95%;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    /*margin: 0px auto 93px -35%;*/
+    margin: 0 !important;
+    transform: translate(-50%, -25%);
+    -webkit-transform: translate(-50%, -25%);
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .clsContactoDer {
+    background-color: #000;
+    opacity: 0.9;
+  }
+  .clsContPriMsjContacto {
+    position: absolute;
+    width: 100%;
+    left: 77%;
+    transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+  }
+  .clsRespGracias {
+    margin-top: 10px;
+    margin-left: 20px;
+    font: 22px "CatamaranBold";
+    line-height: 30px;
+    color: #9c9b9b;
+  }
+  .clsRespMsj {
+    margin-left: 20px;
+    font: 16px "CatamaranMedium";
+    color: #9c9b9b;
+  }
+  /*contacto*/
+  /*Destinos*/
+  .clsContInfoDestino,
+.clsContInfoDescDestino {
+    min-height: 800px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .clsContInfoDescDestino {
+    color: #ffffff;
+  }
+  .clsContTituloLogo {
+    position: relative;
+    width: 110%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+  .clsTituloNuestrosDestinos {
+    position: relative;
+    margin-right: 20px;
+    font: 44px "CatamaranBold";
+    color: #bfbbbd;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos img {
+    width: 100%;
+    height: auto;
+  }
+  .clsContDescNuestrosDestinos {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    font: 17px "CatamaranLight";
+  }
+  .clsTituloItemDestino {
+    font: 32px "CatamaranSemiBold";
+    margin-bottom: 40px;
+  }
+  .clsUlDescDestinos {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font: 17px "CatamaranLight";
+  }
+  .clsUlDescDestinos li {
+    padding-left: 1em;
+    text-indent: -0.7em;
+  }
+  .clsUlDescDestinos li::before {
+    content: "• ";
+    color: #cbad4f;
+    font: 18px "CatamaranBold";
+  }
+  .clsContInfoDescDestino {
+    position: relative;
+    margin-top: 100px;
+  }
+  .clsTextoPieItemDestino {
+    font: 17px "CatamaranSemiBold";
+  }
+  .clsContBotonesDestino {
+    position: absolute;
+    width: 75px;
+    height: 250px;
+    left: unset;
+    top: 0px;
+    right: -75px;
+    z-index: 999;
+  }
+  .clsContBotonesDestino > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .clsContBotonesDestino > ul > li {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 8px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .clsContBotonesDestino > ul > li:hover {
+    width: 75px;
+    height: 57px;
+    background-color: #cbad4f;
+  }
+  .img-ico-destinos {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 15px 7px;
+  }
+  .liActive {
+    width: 75px !important;
+    height: 57px !important;
+    background-color: #cbad4f !important;
+  }
+  /*Fin Destinos*/
+  /*Viajes*/
+  .mt-header-viajes {
+    margin-top: 170px;
+  }
+  .mb-header-viajes {
+    margin-bottom: 100px;
+  }
+  /*Fin Viajes*/
+  /*Footer*/
+  .clsBtnBlog {
+    height: 52px;
+  }
+  .clsBtnChat {
+    height: 52px;
+  }
+  /*Fin Footer*/
+  .overlay-experiencias {
+    opacity: 0;
+  }
+  .overlay-img-menu-blog {
+    opacity: 0;
+  }
+  /*Blog*/
+  .post-dia {
+    font-size: 28px;
+  }
+  .post-mes {
+    font-size: 22px;
+    margin-bottom: -20px;
+  }
+  .post-anio {
+    font-size: 18px;
+    margin-bottom: -10px;
+  }
+  .cont-titulo-post {
+    font-size: 20px;
+  }
+  .cont-sub-titulo-post {
+    font-size: 14px;
+  }
+  .clsNota {
+    font-size: 13px;
+  }
+  .link-leer-mas {
+    font-size: 12px;
+  }
+  .cont-blog-contacto {
+    position: relative;
+    top: -24%;
+    width: 200px;
+    height: auto;
+    right: 2%;
+    margin-bottom: 0px;
+    text-align: right;
+    float: right;
+    /*background-image: url('../images/contacto/banner_contactanos.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;*/
+  }
+  .cont-blog-contacto a {
+    font-size: 30px !important;
+  }
+  #divFechaPublicacion {
+    width: 115px;
+    height: 85px;
+    top: -70px;
+    margin-top: -100px;
+  }
+  .post-anio-read {
+    top: 5px;
+    left: -10px;
+    font-size: 28px !important;
+  }
+  .post-mes-read,
+.post-dia-read {
+    top: -30px;
+    left: 50px;
+    margin-bottom: -20px !important;
+    font-size: 28px !important;
+  }
+  /*Fin Blog*/
+}
+
+@media (min-width: 992px) {
+  .sp-layer {
+    font-size: 12px;
+  }
+  #divImgBackInicioMod {
+    height: 250px !important;
+  }
+  .cls-titulo-1 {
+    font-size: 38px;
+  }
+  .cls-titulo-2,
+.cls-titulo-e-2 {
+    font-size: 70px;
+    margin-top: -55px;
+  }
+  #acercade .cls-titulo-i-1 {
+    font-size: 38px;
+  }
+  #acercade .cls-titulo-i-2 {
+    font-size: 70px;
+    margin-top: -55px;
+  }
+  /*porque*/
+  #por-que .container {
+    max-width: 85% !important;
+  }
+  #por-que .sp-horizontal .sp-previous-arrow {
+    left: -60px !important;
+  }
+  #por-que .sp-horizontal .sp-next-arrow {
+    right: -60px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-previous-arrow:after,
+#por-que .sp-next-arrow:before,
+#por-que .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #777777 !important;
+  }
+  .clsSliderTitulo {
+    font: 26px "CatamaranLight";
+    text-transform: none;
+  }
+  /*Fin porque*/
+  /*acercade*/
+  #acercade {
+    height: 511px;
+  }
+  .cls-titulo-i-1 {
+    margin-top: 30px;
+  }
+  .clsAcercaDeMarginBottom {
+    margin-bottom: 0px;
+  }
+  #divContAcercaDeDet {
+    position: relative;
+    top: 0px;
+  }
+  #divMenuAcercaDe {
+    width: 340px;
+    margin-top: -163px;
+  }
+  .clsMarcoAcercaDe {
+    width: 170px;
+    height: 171px;
+    font: 210px "CatamaranLight";
+  }
+  #divNumero-1 {
+    line-height: 165px;
+    left: 21px;
+    top: 27px;
+  }
+  #divNumero-2 {
+    line-height: 165px;
+    left: 8px;
+    top: 27px;
+  }
+  #divNumero-3 {
+    line-height: 165px;
+    left: 12px;
+    top: 11px;
+  }
+  /*Fin acercade*/
+  /*Viajes*/
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 80%;
+    top: 120%;
+    margin-top: -800px;
+    margin-left: 30%;
+    z-index: 999;
+  }
+  /*Fin Viajes*/
+  /*experiencias*/
+  #experiencias .container {
+    max-width: 85% !important;
+  }
+  .clsSlideTituloExperiencias {
+    width: 50%;
+  }
+  .clsImgLogoSlide {
+    width: 80px;
+    height: 80px;
+  }
+  .clsContSlideTituloTexto-1 {
+    font: 32px "CatamaranBold";
+    color: #555555;
+  }
+  .clsContSlideTituloTexto-2 {
+    position: relative;
+    top: -10px;
+    font: 18px "CatamaranBold";
+    color: #555555;
+  }
+  .clsImgSlideExperiencias {
+    width: 400px;
+    height: auto;
+  }
+  .clsImgSlideExperiencias > img {
+    width: 100%;
+  }
+  .clsSlideTextoExperiencias {
+    position: absolute !important;
+    width: 40%;
+    text-align: right;
+    top: 30% !important;
+    left: 10% !important;
+  }
+  #experiencias .sp-horizontal .sp-previous-arrow {
+    left: -70px !important;
+  }
+  #experiencias .sp-horizontal .sp-next-arrow {
+    right: -70px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-previous-arrow:after,
+#experiencias .sp-next-arrow:before,
+#experiencias .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #777777 !important;
+  }
+  /*Fin experiencias*/
+  /*Eventos*/
+  .clsContTextoEventosEspeciales {
+    position: absolute;
+    width: 80%;
+    margin: 0 !important;
+    font: 28px "CatamaranRegular";
+    line-height: 40px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .col-lg-5-gbr {
+    width: 20%;
+    max-width: 20%;
+    flex: 0 0 20%;
+    float: left;
+  }
+  /*Fin Eventos*/
+  /*FrmContacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 70%;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    margin: 0px auto 93px -35%;
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .cont-text-hola {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  .text-hola {
+    font: 18px "CatamaranBold";
+    color: #cfb355;
+  }
+  .text-deja-msj {
+    font: 18px "CatamaranRegular";
+    color: #fff;
+  }
+  .text-contacto {
+    position: relative;
+    top: 15%;
+    right: 20%;
+    font: 61px "CatamaranBlack";
+    color: #555;
+    text-align: right;
+    line-height: 70px;
+    opacity: 0.5;
+  }
+  .clsContFormContacto {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #frmContacto input,
+#frmContacto textarea {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font: 14px "CatamaranLight";
+    color: #fff;
+  }
+  .frm-fields {
+    font: 14px "CatamaranLight";
+    color: #fff;
+    line-height: 16px;
+  }
+  .cont-text-campos {
+    position: absolute;
+    bottom: 0;
+    font: 14px "CatamaranLight";
+    color: #cfb355;
+  }
+  .cont-btn-contacto,
+.btn-enviar {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .cont-btn-contacto:hover,
+.btn-enviar:hover {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    color: #cfb355;
+  }
+  .cont-btn-contacto > div {
+    float: left;
+    margin-right: 5px;
+  }
+  .cont-btn-contacto > img {
+    position: relative;
+    margin-top: 5px;
+  }
+  /*Fin FrmContacto*/
+  /*contacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 870px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    /*margin: 0px auto 93px -35%;*/
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .clsContPriMsjContacto {
+    position: absolute;
+    width: 100%;
+    left: 77%;
+    transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+  }
+  .clsRespGracias {
+    margin-top: 10px;
+    margin-left: 20px;
+    font: 22px "CatamaranBold";
+    line-height: 30px;
+    color: #9c9b9b;
+  }
+  .clsRespMsj {
+    margin-left: 20px;
+    font: 16px "CatamaranMedium";
+    color: #9c9b9b;
+  }
+  /*contacto*/
+  /*Destinos*/
+  .clsContInfoDestino,
+.clsContInfoDescDestino {
+    min-height: 700px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .clsContInfoDescDestino {
+    color: #ffffff;
+  }
+  .clsContTituloLogo {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+  .clsTituloNuestrosDestinos {
+    position: relative;
+    margin-right: 20px;
+    font: 44px "CatamaranBold";
+    color: #bfbbbd;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos img {
+    width: 100%;
+    height: auto;
+  }
+  .clsContDescNuestrosDestinos {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    font: 17px "CatamaranLight";
+  }
+  .clsTituloItemDestino {
+    font: 32px "CatamaranSemiBold";
+    margin-bottom: 40px;
+  }
+  .clsUlDescDestinos {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font: 17px "CatamaranLight";
+  }
+  .clsUlDescDestinos li {
+    padding-left: 1em;
+    text-indent: -0.7em;
+  }
+  .clsUlDescDestinos li::before {
+    content: "• ";
+    color: #cbad4f;
+    font: 18px "CatamaranBold";
+  }
+  .clsContInfoDescDestino {
+    position: relative;
+    margin-top: 100px;
+  }
+  .clsTextoPieItemDestino {
+    font: 17px "CatamaranSemiBold";
+  }
+  .clsContBotonesDestino {
+    position: absolute;
+    width: 75px;
+    height: 250px;
+    left: unset;
+    top: 0px;
+    right: -75px;
+    z-index: 999;
+  }
+  .clsContBotonesDestino > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .clsContBotonesDestino > ul > li {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 8px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .clsContBotonesDestino > ul > li:hover {
+    width: 75px;
+    height: 57px;
+    background-color: #cbad4f;
+  }
+  .img-ico-destinos {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 15px 7px;
+  }
+  .liActive {
+    width: 75px !important;
+    height: 57px !important;
+    background-color: #cbad4f !important;
+  }
+  /*Fin Destinos*/
+  /*Blog*/
+  .post-dia {
+    font-size: 32px;
+  }
+  .post-mes {
+    font-size: 23px;
+    margin-bottom: -20px;
+  }
+  .post-anio {
+    font-size: 19px;
+    margin-bottom: -10px;
+  }
+  .cont-titulo-post {
+    font-size: 22px;
+  }
+  .cont-sub-titulo-post {
+    font-size: 15px;
+  }
+  .clsNota {
+    font-size: 14px;
+  }
+  .link-leer-mas {
+    font-size: 12px;
+  }
+  .cont-blog-contacto {
+    position: relative;
+    top: -22%;
+    width: 200px;
+    height: auto;
+    right: 4%;
+    margin-bottom: 0px;
+    text-align: right;
+    float: right;
+    /*background-image: url('../images/contacto/banner_contactanos.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;*/
+  }
+  .cont-blog-contacto a {
+    font-size: 34px !important;
+  }
+  .post-anio-read {
+    top: 5px;
+    left: -10px;
+    font-size: 28px !important;
+  }
+  .post-mes-read,
+.post-dia-read {
+    top: -30px;
+    left: 50px;
+    margin-bottom: -20px !important;
+    font-size: 28px !important;
+  }
+  /*Fin Blog*/
+}
+
+@media (min-width: 1200px) {
+  #divImgBackInicioMod {
+    height: 300px !important;
+  }
+  .cls-titulo-1 {
+    font-size: 38px;
+  }
+  .cls-titulo-2,
+.cls-titulo-e-2 {
+    font-size: 70px;
+    margin-top: -55px;
+  }
+  #acercade .cls-titulo-i-1 {
+    font-size: 38px;
+  }
+  #acercade .cls-titulo-i-2 {
+    font-size: 70px;
+    margin-top: -55px;
+  }
+  .cls-titulo-e-1 {
+    font-size: 38px;
+  }
+  /*FrmContacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 70%;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    margin: 0px auto 93px -35%;
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .cont-text-hola {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  .text-hola {
+    font: 18px "CatamaranBold";
+    color: #cfb355;
+  }
+  .text-deja-msj {
+    font: 18px "CatamaranRegular";
+    color: #fff;
+  }
+  .text-contacto {
+    position: relative;
+    top: 15%;
+    right: 20%;
+    font: 61px "CatamaranBlack";
+    color: #555;
+    text-align: right;
+    line-height: 70px;
+    opacity: 0.5;
+  }
+  .clsContFormContacto {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #frmContacto input,
+#frmContacto textarea {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font: 14px "CatamaranLight";
+    color: #fff;
+  }
+  .frm-fields {
+    font: 14px "CatamaranLight";
+    color: #fff;
+    line-height: 16px;
+  }
+  .cont-text-campos {
+    position: absolute;
+    bottom: 0;
+    font: 14px "CatamaranLight";
+    color: #cfb355;
+  }
+  .cont-btn-contacto,
+.btn-enviar {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .cont-btn-contacto:hover,
+.btn-enviar:hover {
+    position: relative;
+    width: 100px;
+    right: -8px;
+    float: right;
+    color: #cfb355;
+  }
+  .cont-btn-contacto > div {
+    float: left;
+    margin-right: 5px;
+  }
+  .cont-btn-contacto > img {
+    position: relative;
+    margin-top: 5px;
+  }
+  /*Fin FrmContacto*/
+  /*porque*/
+  #por-que .container {
+    max-width: 85% !important;
+  }
+  #por-que .sp-horizontal .sp-previous-arrow {
+    left: -60px !important;
+  }
+  #por-que .sp-horizontal .sp-next-arrow {
+    right: -60px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #por-que .sp-previous-arrow:before,
+#por-que .sp-previous-arrow:after,
+#por-que .sp-next-arrow:before,
+#por-que .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #777777 !important;
+  }
+  .clsSliderTitulo {
+    font: 32px "CatamaranLight";
+    text-transform: none;
+  }
+  /*Fin porque*/
+  /*acercade*/
+  #acercade {
+    height: 601px;
+  }
+  .clsAcercaDeMarginBottom {
+    margin-bottom: 0px;
+  }
+  #divMenuAcercaDe {
+    width: 400px;
+    margin-top: -163px;
+  }
+  #divContAcercaDeDet {
+    position: relative;
+    top: 0px;
+  }
+  .clsMarcoAcercaDe {
+    width: 200px;
+    height: 201px;
+    font: 280px "CatamaranLight";
+  }
+  #divNumero-1 {
+    line-height: 165px;
+    left: 21px;
+    top: 38px;
+  }
+  #divNumero-2 {
+    line-height: 165px;
+    left: 8px;
+    top: 38px;
+  }
+  #divNumero-3 {
+    line-height: 165px;
+    left: 12px;
+    top: 18px;
+  }
+  /*Fin acercade*/
+  /*Viajes*/
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 80%;
+    top: 110%;
+    margin-top: -800px;
+    margin-left: 30%;
+    z-index: 999;
+  }
+  /*Fin Viajes*/
+  /*experiencias*/
+  #experiencias .container {
+    max-width: 85% !important;
+  }
+  .clsSlideTituloExperiencias {
+    width: 50%;
+  }
+  .clsImgLogoSlide {
+    width: 80px;
+    height: 80px;
+  }
+  .clsContSlideTituloTexto-1 {
+    font: 32px "CatamaranBold";
+    color: #555555;
+  }
+  .clsContSlideTituloTexto-2 {
+    position: relative;
+    top: -10px;
+    font: 18px "CatamaranBold";
+    color: #555555;
+  }
+  .clsImgSlideExperiencias {
+    width: 400px;
+    height: auto;
+  }
+  .clsImgSlideExperiencias > img {
+    width: 100%;
+  }
+  .clsSlideTextoExperiencias {
+    position: absolute !important;
+    width: 40%;
+    text-align: right;
+    top: 30% !important;
+    left: 10% !important;
+  }
+  #experiencias .sp-horizontal .sp-previous-arrow {
+    left: -100px !important;
+  }
+  #experiencias .sp-horizontal .sp-next-arrow {
+    right: -100px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-next-arrow:before {
+    margin-top: -14px !important;
+  }
+  #experiencias .sp-previous-arrow:before,
+#experiencias .sp-previous-arrow:after,
+#experiencias .sp-next-arrow:before,
+#experiencias .sp-next-arrow:after {
+    width: 30% !important;
+    height: 100% !important;
+    background-color: #777777 !important;
+  }
+  /*Fin experiencias*/
+  /*Eventos*/
+  .clsContTextoEventosEspeciales {
+    position: absolute;
+    width: 80%;
+    margin: 0 !important;
+    font: 32px "CatamaranRegular";
+    line-height: 40px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .col-xl-5-gbr {
+    width: 20%;
+    max-width: 20%;
+    flex: 0 0 20%;
+    float: left;
+  }
+  /*Fin Eventos*/
+  /*contacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 870px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    /*margin: 0px auto 93px -35%;*/
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .clsContPriMsjContacto {
+    position: absolute;
+    width: 100%;
+    left: 77%;
+    transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+  }
+  .clsRespGracias {
+    margin-top: 10px;
+    margin-left: 20px;
+    font: 22px "CatamaranBold";
+    line-height: 30px;
+    color: #9c9b9b;
+  }
+  .clsRespMsj {
+    margin-left: 20px;
+    font: 16px "CatamaranMedium";
+    color: #9c9b9b;
+  }
+  /*contacto*/
+  /*Destinos*/
+  .clsContInfoDestino,
+.clsContInfoDescDestino {
+    min-height: 700px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .clsContInfoDescDestino {
+    color: #ffffff;
+  }
+  .clsContTituloLogo {
+    position: relative;
+    width: 62%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+  .clsTituloNuestrosDestinos {
+    position: relative;
+    margin-right: 20px;
+    font: 44px "CatamaranBold";
+    color: #bfbbbd;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    float: left;
+  }
+  .clsContLogoNuestrosDestinos img {
+    width: 100%;
+    height: auto;
+  }
+  .clsContDescNuestrosDestinos {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    font: 17px "CatamaranLight";
+  }
+  .clsTituloItemDestino {
+    font: 32px "CatamaranSemiBold";
+    margin-bottom: 40px;
+  }
+  .clsUlDescDestinos {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font: 17px "CatamaranLight";
+  }
+  .clsUlDescDestinos li {
+    padding-left: 1em;
+    text-indent: -0.7em;
+  }
+  .clsUlDescDestinos li::before {
+    content: "• ";
+    color: #cbad4f;
+    font: 18px "CatamaranBold";
+  }
+  .clsContInfoDescDestino {
+    position: relative;
+    margin-top: 100px;
+  }
+  .clsTextoPieItemDestino {
+    font: 17px "CatamaranSemiBold";
+  }
+  .clsContBotonesDestino {
+    position: absolute;
+    width: 75px;
+    height: 250px;
+    left: unset;
+    top: 0px;
+    right: -75px;
+    z-index: 999;
+  }
+  .clsContBotonesDestino > ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .clsContBotonesDestino > ul > li {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 8px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .clsContBotonesDestino > ul > li:hover {
+    width: 75px;
+    height: 57px;
+    background-color: #cbad4f;
+  }
+  .img-ico-destinos {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 15px 7px;
+  }
+  .liActive {
+    width: 75px !important;
+    height: 57px !important;
+    background-color: #cbad4f !important;
+  }
+  /*Fin Destinos*/
+  /*Blog*/
+  .post-dia {
+    font-size: 32px;
+  }
+  .post-mes {
+    font-size: 23px;
+    margin-bottom: -20px;
+  }
+  .post-anio {
+    font-size: 19px;
+    margin-bottom: -10px;
+  }
+  .cont-titulo-post {
+    font-size: 22px;
+  }
+  .cont-sub-titulo-post {
+    font-size: 15px;
+  }
+  .clsNota {
+    font-size: 14px;
+  }
+  .link-leer-mas {
+    font-size: 12px;
+  }
+  .cont-blog-contacto {
+    position: relative;
+    top: -18%;
+    width: 200px;
+    height: auto;
+    right: 6%;
+    margin-bottom: 50px;
+    text-align: right;
+    float: right;
+    /*background-image: url('../images/contacto/banner_contactanos.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;*/
+  }
+  .cont-blog-contacto a {
+    font-size: 36px !important;
+  }
+  .post-anio-read {
+    top: 5px;
+    left: -10px;
+    font-size: 28px !important;
+  }
+  .post-mes-read,
+.post-dia-read {
+    top: -30px;
+    left: 50px;
+    margin-bottom: -20px !important;
+    font-size: 28px !important;
+  }
+  /*Fin Blog*/
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 80%;
+    top: 100%;
+    margin-top: -800px;
+    margin-left: 30%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1999px) {
+  #divImgBackInicioMod {
+    height: 300px !important;
+  }
+  /*acerca de*/
+  .clsTextoDMC {
+    font: 50px "CatamaranBold";
+    line-height: 55px;
+    text-align: left;
+  }
+  .clsTextoAcercaDe {
+    margin-bottom: 30px;
+    font: 20px "CatamaranLight";
+    line-height: 36px;
+  }
+  /*Fin acerca de*/
+  /*Eventos*/
+  .clsContTextoEventosEspeciales {
+    position: absolute;
+    width: 70%;
+    margin: 0 !important;
+    font: 32px "CatamaranRegular";
+    line-height: 40px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  /*Fin Eventos*/
+  /*Viajes*/
+  .clsTextoInteriores {
+    margin-bottom: 100px;
+    font: 24px "CatamaranLight";
+  }
+  /*Fin Viajes*/
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 80%;
+    top: 90%;
+    margin-top: -130%;
+    margin-left: 30%;
+    z-index: 999;
+  }
+  /*contacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 1200px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    /*margin: 0px auto 93px -35%;*/
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .clsContPriMsjContacto {
+    position: absolute;
+    width: 100%;
+    left: 82%;
+    transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+  }
+  .clsRespGracias {
+    margin-top: 10px;
+    margin-left: 20px;
+    font: 22px "CatamaranBold";
+    line-height: 30px;
+    color: #9c9b9b;
+  }
+  .clsRespMsj {
+    margin-left: 20px;
+    font: 16px "CatamaranMedium";
+    color: #9c9b9b;
+  }
+  /*contacto*/
+}
+
+@media (min-width: 2000px) and (max-width: 2399px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 80%;
+    top: 90%;
+    margin-top: -115%;
+    margin-left: 40%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 2400px) and (max-width: 2599px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 80%;
+    top: 90%;
+    margin-top: -115%;
+    margin-left: 40%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 2600px) and (max-width: 2999px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 70%;
+    top: 110%;
+    margin-top: -115%;
+    margin-left: 40%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 3000px) {
+  #divImgBackInicioMod {
+    height: 300px !important;
+  }
+  /*acerca de*/
+  .clsTextoDMC {
+    font: 60px "CatamaranBold";
+    line-height: 55px;
+    text-align: left;
+  }
+  .clsTextoAcercaDe {
+    margin-bottom: 30px;
+    font: 26px "CatamaranLight";
+    line-height: 36px;
+  }
+  /*Fin acerca de*/
+  /*Eventos*/
+  .clsContTextoEventosEspeciales {
+    position: absolute;
+    width: 70%;
+    margin: 0 !important;
+    font: 32px "CatamaranRegular";
+    line-height: 40px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  /*Fin Eventos*/
+  /*Viajes*/
+  .clsTextoInteriores {
+    margin-bottom: 100px;
+    font: 28px "CatamaranLight";
+  }
+  /*Fin Viajes*/
+  /*contacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 1200px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    /*margin: 0px auto 93px -35%;*/
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .text-hola {
+    font: 28px "CatamaranBold";
+  }
+  .text-deja-msj {
+    font: 28px "CatamaranRegular";
+  }
+  .frm-fields {
+    font: 20px "CatamaranLight";
+    line-height: 18px;
+  }
+  #frmContacto input,
+#frmContacto textarea {
+    font: 24px "CatamaranLight";
+  }
+  .clsContPriMsjContacto {
+    position: absolute;
+    width: 100%;
+    left: 82%;
+    transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+  }
+  .clsRespGracias {
+    margin-top: 10px;
+    margin-left: 20px;
+    font: 22px "CatamaranBold";
+    line-height: 30px;
+    color: #9c9b9b;
+  }
+  .clsRespMsj {
+    margin-left: 20px;
+    font: 16px "CatamaranMedium";
+    color: #9c9b9b;
+  }
+  /*contacto*/
+}
+
+#tentradas {
+  text-decoration: none;
+  color: #2a4a96;
+}
+
+#tentradas:hover,
+#tentradas:focus {
+  text-decoration: none;
+  color: #9c9b9b;
+}
+
+@media (min-width: 3000px) and (max-width: 3299px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 60%;
+    top: 110%;
+    margin-top: -115%;
+    margin-left: 50%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 3000px) and (max-width: 5000px) {
+  #divImgBackInicioMod {
+    height: 300px !important;
+  }
+  /*acerca de*/
+  .clsTextoDMC {
+    font: 60px "CatamaranBold";
+    line-height: 55px;
+    text-align: left;
+  }
+  .clsTextoAcercaDe {
+    margin-bottom: 30px;
+    font: 30px "CatamaranLight";
+    line-height: 40px;
+  }
+  /*Fin acerca de*/
+  /*Eventos*/
+  .clsContTextoEventosEspeciales {
+    position: absolute;
+    width: 70%;
+    margin: 0 !important;
+    font: 32px "CatamaranRegular";
+    line-height: 40px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  /*Fin Eventos*/
+  /*Viajes*/
+  .clsTextoInteriores {
+    margin-bottom: 100px;
+    font: 28px "CatamaranLight";
+  }
+  /*Fin Viajes*/
+  /*contacto*/
+  #frm-contacto {
+    position: fixed;
+    width: 1200px;
+    min-height: 400px;
+    height: auto;
+    left: 50%;
+    /*margin: 0px auto 93px -35%;*/
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 999999;
+  }
+  #frm-contacto .clsContactoIzq,
+#frm-contacto .clsContactoDer {
+    min-height: 400px;
+  }
+  .text-hola {
+    font: 28px "CatamaranBold";
+  }
+  .text-deja-msj {
+    font: 28px "CatamaranRegular";
+  }
+  .frm-fields {
+    font: 20px "CatamaranLight";
+    line-height: 18px;
+  }
+  #frmContacto input,
+#frmContacto textarea {
+    font: 24px "CatamaranLight";
+  }
+  .clsContPriMsjContacto {
+    position: absolute;
+    width: 100%;
+    left: 82%;
+    transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+  }
+  .clsRespGracias {
+    margin-top: 10px;
+    margin-left: 20px;
+    font: 22px "CatamaranBold";
+    line-height: 30px;
+    color: #9c9b9b;
+  }
+  .clsRespMsj {
+    margin-left: 20px;
+    font: 16px "CatamaranMedium";
+    color: #9c9b9b;
+  }
+  /*contacto*/
+}
+
+@media (min-width: 3300px) and (max-width: 3799px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 50%;
+    top: 130%;
+    margin-top: -115%;
+    margin-left: 60%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 3800px) and (max-width: 3999px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 50%;
+    top: 140%;
+    margin-top: -115%;
+    margin-left: 60%;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 4000px) and (max-width: 4999px) {
+  #divContGatViajes,
+#divContGatViajes-g {
+    position: relative;
+    width: 40%;
+    top: 160%;
+    margin-top: -115%;
+    margin-left: 70%;
+    z-index: 999;
+  }
+}
+
+/*------------------------- modificaciones 13 mayo 2019 CC2 Mexico-----------------------*/
+@media (min-width: 320px) {
+  #divWhatsApp {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    top: auto;
+    bottom: 0px;
+    right: 45%;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #divWhatsApp i {
+    width: 100%;
+    height: 100%;
+    margin: -3px 0 0 0;
+    font-size: 42px;
+    color: #00b79b;
+  }
+  .clsTextoInfo-1 {
+    font-size: 17px !important;
+    width: 128%;
+    left: -25px;
+  }
+  .clsTextoInfo-2 {
+    left: -22px;
+    width: 124%;
+    font-size: 17px !important;
+  }
+  .clsTextoInfo-3 {
+    width: 100%;
+    font-size: 17px !important;
+  }
+  .clsTextoInfo-4 {
+    width: 130%;
+    left: -28px;
+    font-size: 15px !important;
+  }
+  .clsTextoInfo-5 {
+    width: 107%;
+    font-size: 20px !important;
+  }
+  .clsTextoInfo-6 {
+    width: 126%;
+    font-size: 14px !important;
+    left: -27px;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 118%;
+    left: -19px;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-10 {
+    width: 109%;
+    font-size: 16px !important;
+    left: -12px;
+  }
+  .clsTextoInfo-11 {
+    width: 99%;
+    left: 14px;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 129%;
+    font-size: 13px !important;
+    left: -33px;
+  }
+  .clsPieTexto-13 {
+    font-size: 15px !important;
+  }
+  .clsTextoInfo-14 {
+    width: 131%;
+    font-size: 17px !important;
+    left: -30px;
+  }
+  .clsTextoInfo-15 {
+    width: 100%;
+    font-size: 14px !important;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+  #divImgBackHome {
+    /*content: url("../images/bannerpr/back-home_320.jpg");*/
+    /*content: url("../images/bannerpr/back-home_375.jpg");*/
+    /*content: url("../images/bannerpr/back-home_425.jpg");*/
+    /*content: url("../images/bannerpr/back-home_768.jpg");*/
+    height: 65vh;
+  }
+}
+
+@media (min-width: 375px) {
+  .clsTextoInfo-1 {
+    width: 128%;
+    left: -33px;
+    font-size: 20px !important;
+  }
+  .clsTextoInfo-2 {
+    width: 101%;
+    left: 2px;
+  }
+  .clsTextoInfo-3 {
+    width: 86%;
+    left: 20px;
+    font-size: 24 !important;
+  }
+  .clsTextoInfo-4 {
+    width: 122%;
+    left: -20px;
+    font-size: 18px !important;
+  }
+  .clsTextoInfo-5 {
+    width: 93%;
+    font-size: 20px !important;
+    left: 7px;
+  }
+  .clsTextoInfo-6 {
+    width: 122%;
+    left: -25px;
+    font-size: 16px !important;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 114%;
+  }
+  .clsTextoInfo-10 {
+    width: 101%;
+    left: 2px;
+  }
+  .clsTextoInfo-11 {
+    width: 85%;
+    left: 31px;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 114%;
+    left: -12px;
+  }
+  #divImgBackHome {
+    /*content: url("../images/bannerpr/back-home_768.jpg");
+        /*content: url("../images/bannerpr/back-home_425.jpg");*/
+    height: 75vh;
+  }
+}
+
+@media (min-width: 425px) {
+  .clsTextoInfo-1 {
+    width: 100%;
+    font-size: 18px !important;
+    left: 6px;
+  }
+  .clsTextoInfo-2 {
+    width: 77%;
+    left: 35px;
+  }
+  .clsTextoInfo-3 {
+    width: 86%;
+    left: 20px;
+  }
+  .clsTextoInfo-4 {
+    width: 125%;
+    left: -35px;
+    font-size: 20px !important;
+  }
+  .clsTextoInfo-5 {
+    width: 86%;
+    font-size: 20px !important;
+    left: 14px;
+  }
+  .clsTextoInfo-6 {
+    width: 116%;
+    left: -4px;
+    font-size: 17px !important;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 100%;
+    left: 0px;
+    font-size: 24px !important;
+  }
+  .clsTextoInfo-10 {
+    width: 89%;
+    left: 14px;
+  }
+  .clsTextoInfo-11 {
+    width: 77%;
+    left: 31px;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 100%;
+    left: 10px;
+  }
+  clsPieTexto-13 {
+    font-size: 13px !important;
+  }
+  .clsTextoInfo-14 {
+    width: 100%;
+    left: 0px;
+  }
+  .clsTextoInfo-15 {
+    width: 100%;
+    font-size: 19px !important;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+  #divImgBackHome {
+    /*content: url("../images/bannerpr/back-home_768.jpg");*/
+    height: 80vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .clsTextoInfo-1 {
+    width: 100%;
+    font-size: 17px !important;
+    left: 5px;
+  }
+  .clsTextoInfo-2 {
+    width: 77%;
+    left: 35px;
+    font-size: 24px !important;
+  }
+  .clsTextoInfo-3 {
+    width: 86%;
+    left: 30px;
+  }
+  .clsTextoInfo-4 {
+    width: 110%;
+    left: -12px;
+  }
+  .clsTextoInfo-5 {
+    width: 88%;
+    left: 17px;
+  }
+  .clsTextoInfo-6 {
+    width: 117%;
+    left: -25px;
+    font-size: 17px !important;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 100%;
+    left: 6px;
+  }
+  .clsTextoInfo-10 {
+    width: 120%;
+    left: -27px;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-11 {
+    width: 78%;
+    left: 28px;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 100%;
+    font-size: 13px !important;
+  }
+  .clsTextoInfo-14 {
+    width: 100%;
+  }
+  .clsTextoInfo-15 {
+    width: 100%;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+  #divImgBackHome {
+    /*content: url("../images/bannerpr/back-home_992.jpg");*/
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .clsTextoInfo-1 {
+    width: 100%;
+  }
+  .clsTextoInfo-2 {
+    width: 100%;
+  }
+  .clsTextoInfo-3 {
+    width: 86%;
+    left: 30px;
+  }
+  .clsTextoInfo-4 {
+    width: 100%;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-5 {
+    width: 100%;
+  }
+  .clsTextoInfo-6 {
+    width: 69%;
+    left: 100px;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 100%;
+  }
+  .clsTextoInfo-10 {
+    width: 100%;
+  }
+  .clsTextoInfo-11 {
+    width: 100%;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 100%;
+  }
+  .clsTextoInfo-14 {
+    width: 100%;
+  }
+  .clsTextoInfo-15 {
+    width: 94%;
+    left: 14px;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+  #divImgBackHome {
+    content: url("../images/bannerpr/back-home_1024.jpg");
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .clsTextoInfo-1 {
+    width: 100%;
+    font-size: 22px !important;
+    left: 9px;
+  }
+  .clsTextoInfo-2 {
+    width: 92%;
+    left: 20px;
+  }
+  .clsTextoInfo-3 {
+    width: 65%;
+    left: 93px;
+  }
+  .clsTextoInfo-4 {
+    width: 103%;
+    left: -1px;
+  }
+  .clsTextoInfo-5 {
+    width: 100%;
+    left: 0px;
+  }
+  .clsTextoInfo-6 {
+    width: 100%;
+    left: 4px;
+    font-size: 20px !important;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 74%;
+    left: 56px;
+  }
+  .clsTextoInfo-10 {
+    width: 82%;
+    left: 57px;
+  }
+  .clsTextoInfo-11 {
+    width: 58%;
+    left: 76px;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 101%;
+    left: -6px;
+    font-size: 18px !important;
+  }
+  .clsTextoInfo-14 {
+    width: 79%;
+    left: 60px;
+  }
+  .clsTextoInfo-15 {
+    width: 79%;
+    left: 53px;
+    font-size: 19px !important;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+  #divImgBackHome {
+    content: url("../images/bannerpr/back-home_1024.jpg");
+    height: 100vh;
+  }
+}
+
+@media screen and (height: 768px) {
+  #divImgBackHome {
+    height: 81vh;
+  }
+}
+
+@media screen and (height: 1024px) {
+  #divImgBackHome {
+    height: 60vh;
+  }
+  .imgIcoUnete {
+    width: 107px;
+    height: auto;
+  }
+  #divUnete {
+    height: 115px;
+    margin-top: -115px;
+  }
+}
+
+@media screen and (height: 1080px) {
+  .imgIcoUnete {
+    width: 174px;
+    height: auto;
+  }
+  #divUnete {
+    height: 180px;
+    margin-top: -180px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #divImgBackHome {
+    content: url("../images/bannerpr/back-home_1440.jpg");
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .clsTextoInfo-1 {
+    width: 100%;
+    font-size: 24px !important;
+  }
+  .clsTextoInfo-2 {
+    width: 81%;
+    left: 56px;
+  }
+  .clsTextoInfo-3 {
+    width: 61%;
+    left: 96px;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-4 {
+    width: 75%;
+    left: 81px;
+  }
+  .clsTextoInfo-5 {
+    width: 100%;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-6 {
+    width: 84%;
+    left: 54px;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 54%;
+    left: 131px;
+  }
+  .clsTextoInfo-10 {
+    width: 65%;
+    left: 110px;
+  }
+  .clsTextoInfo-11 {
+    width: 75%;
+    left: 62px;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 92%;
+    left: 25px;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-14 {
+    width: 79%;
+    left: 63px;
+  }
+  .clsTextoInfo-15 {
+    width: 67%;
+    left: 95px;
+    font-size: 22px !important;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .clsTextoInfo-1 {
+    width: 100%;
+  }
+  .clsTextoInfo-2 {
+    width: 81%;
+  }
+  .clsTextoInfo-3 {
+    width: 100%;
+    left: 0px;
+  }
+  .clsTextoInfo-4 {
+    width: 100%;
+    left: 0px;
+  }
+  .clsTextoInfo-5 {
+    width: 100%;
+  }
+  .clsTextoInfo-6 {
+    width: 84%;
+    left: 52px;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 100%;
+  }
+  .clsTextoInfo-10 {
+    width: 100%;
+  }
+  .clsTextoInfo-11 {
+    width: 100%;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 100%;
+  }
+  .clsTextoInfo-14 {
+    width: 100%;
+  }
+  .clsTextoInfo-15 {
+    width: 67%;
+    left: 100px;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+  #divImgBackHome {
+    content: url("../images/bannerpr/back-home_1900.jpg");
+    height: 100vh;
+  }
+}
+
+@media (min-width: 2560px) {
+  .clsTextoInfo-1 {
+    width: 100%;
+  }
+  .clsTextoInfo-2 {
+    width: 77%;
+    left: 69px;
+  }
+  .clsTextoInfo-3 {
+    width: 59%;
+    left: 109px;
+  }
+  .clsTextoInfo-4 {
+    width: 75%;
+    left: 79px;
+  }
+  .clsTextoInfo-5 {
+    width: 100%;
+  }
+  .clsTextoInfo-6 {
+    width: 83%;
+    left: 51px;
+  }
+  .clsTextoInfo-7 {
+    width: 100%;
+  }
+  .clsTextoInfo-8 {
+    width: 100%;
+  }
+  .clsTextoInfo-9 {
+    width: 54%;
+    left: 128px;
+  }
+  .clsTextoInfo-10 {
+    width: 65%;
+    left: 110px;
+  }
+  .clsTextoInfo-11 {
+    width: 75%;
+    left: 62px;
+  }
+  .clsTextoInfo-12 {
+    width: 100%;
+  }
+  .clsTextoInfo-13 {
+    width: 92%;
+    left: 18px;
+  }
+  .clsTextoInfo-14 {
+    width: 79%;
+    left: 60px;
+  }
+  .clsTextoInfo-15 {
+    width: 67%;
+  }
+  .clsTextoInfo-16 {
+    width: 100%;
+  }
+  #divImgBackHome {
+    content: url("../images/bannerpr/back-home_2560.jpg");
+    height: 100vh;
+  }
+}
+
+.selectLang,
+#selectLang {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.ql-align-right {
+  text-align: right;
+}
+
+.ql-align-center {
+  text-align: center;
+}
+
+.ql-align-justify {
+  text-align: justify;
+}
+
+.clsTags {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 25px;
+}
+
+.clsTags a {
+  color: #bfbbbd;
+  font-family: 'CatamaranLight';
+  font-size: 14px;
+  padding: 3px;
+}
+
+.clsTags a:hover {
+  text-decoration: none;
+  color: #2a4a96;
+}
+
+/*# sourceMappingURL=app.css.map */

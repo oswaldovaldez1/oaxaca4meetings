@@ -1,0 +1,1000 @@
+  205  clear
+  206  javac -version
+  207  sh android.sh 
+  208  nano android.sh
+  209  sh android.sh 
+  210  sdk install gradle 6.5.1
+  211  sh android.sh 
+  212  nano android.sh
+  213  sh android.sh 
+  214  adb devies
+  215  adb devices
+  216  native-run android --app platforms/android/app/build/outputs/apk/debug/app-debug.apk --device
+  217  native-run android --app platforms/android/app/build/outputs/apk/debug/app-debug.apk --device --verbose
+  218  whereis ANDROID_SDK_ROOT
+  219  export ANDROID_SDK_ROOT=/home/warlock/Android/Sdk/
+  220  whereis ANDROID_SDK_ROOT
+  221  echo $ANDROID_SDK_ROOT
+  222  clear
+  223  cordoba build android
+  224  cordova build android
+  225  exit
+  226  sudo snap remove android-studio
+  227  clear
+  228  exit
+  229  history
+  230  cd ..
+  231  cp android-studio/ /opt/android-studio -Rf
+  232  sudo cp android-studio/ /opt/android-studio -Rf
+  233  exit
+  234  gradle -version
+  235  glade -version
+  236  clear
+  237  nano android.sh
+  238  gradle -version
+  239  sudo apt install gradle
+  240  cler
+  241  clear
+  242  >sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+  243  sudo su
+  244  exit
+  245  cp Android/ /home/warlock/Android/ -Rf
+  246  exit
+  247  ls
+  248  sudo chmod 777 /opt/android-studio/
+  249  ld /opt/
+  250  ls /opt/
+  251  clear
+  252  cd /opt/android-studio/
+  253  ls
+  254  cd bin/
+  255  ls
+  256  sh studio.sh 
+  257  cd /home/warlock/
+  258  sh /opt/android-studio/bin/studio.sh
+  259  wget https://r1---sn-j5caxh5n-v5me.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-linux.tar.gz?cms_redirect=yes&mh=Ft&mip=189.220.226.214&mm=28&mn=sn-j5caxh5n-v5me&ms=nvh&mt=1595608751&mv=m&mvi=1&pl=23&shardbypass=yes
+  260  clear
+  261  rm /opt/android-studio/ -R
+  262  clear
+  263  sudo rm /opt/android-studio/ -R
+  264  clear
+  265  exit
+  266  sudo su
+  267  exit
+  268  sudo su
+  269  exit
+  270  sh android.sh 
+  271  nano android.sh 
+  272  clear
+  273  nano android.sh 
+  274  sh android.sh
+  275  nano android.sh 
+  276  sh android.sh
+  277  sh android.sh 
+  278  adb
+  279  adb devices
+  280  cd platforms/
+  281  ls
+  282  cd android/
+  283  ls
+  284  cd app/build/
+  285  ls
+  286  cd outputs/
+  287  ls
+  288  cd apk/
+  289  ls
+  290  cd b
+  291  cd debug/
+  292  ls
+  293  adb install app-debug.apk 
+  294  cd /home/warlock/Documentos/movil/
+  295  ls
+  296  cd ionic/
+  297  ls
+  298  rm mapa -R
+  299  rm menu/ -R
+  300  clear
+  301  chmod 777 menu/ -R
+  302  cd m
+  303  cd menu/
+  304  ls
+  305  rm * -R
+  306  cd ..
+  307  rm menu/ -R
+  308  ionic start --list
+  309  ionic start sidemenu
+  310  cd sidemenu/
+  311  cordova-res --skip-config --copy
+  312  clear
+  313  nano android.sh 
+  314  sh android.sh 
+  315  cordova platform add android --save
+  316  cordova platform add android --save --verbose
+  317  cordova platform add android --nofetch
+  318  cordova platform add android --nofetch --verbose
+  319  cordova platform add android --nofetch 
+  320  sh android.sh 
+  321  ng run app:ionic-cordova-build --platform=android --verbose
+  322  ng run app:ionic-cordova-build --platform=android 
+  323  sh android.sh 
+  324  cordova buils android --device --verbose
+  325  cordova build android --device --verbose
+  326  android-studio
+  327  sh android.sh 
+  328  android-studio
+  329  rm sidemenu/ -R
+  330  sud chmod 777 sidemenu/
+  331  sudo chmod 777 sidemenu/
+  332  rm sidemenu/ -R
+  333  cleaar
+  334  clear
+  335  ionic start
+  336  cd warlock/
+  337  ionic serve
+  338  ng run app:serve --host=localhost --port=8100
+  339  sh android.sh 
+  340  nano android.sh 
+  341  sh android.sh 
+  342  exit
+  343  lsb
+  344  clear
+  345  lsb
+  346  clear
+  347  cd ..
+  348  cd Descargas/
+  349  sudo apt-get install lsb
+  350  lsb
+  351  ls *.deb
+  352  ls
+  353  rm *.rpm
+  354  tar --helo
+  355  tar --help
+  356  tar --helpclear
+  357  clear
+  358  ls
+  359  tar -gz imagescan-bundle-ubuntu-18.04-3.63.0.x64.deb.tar.gz
+  360  imagescan-bundle-ubuntu-18.04-3.63.0.x64.deb.tar.gz
+  361  ls
+  362  cd imagescan-bundle-ubuntu-18.04-3.63.0.x64.deb/
+  363  ls
+  364  sudo sh install.sh 
+  365  cd ..
+  366  ls
+  367  sudo dpkg -i epson-printer-utility_1.1.1-1lsb3.2_amd64.deb 
+  368  lsb
+  369  sudo su
+  370  exit
+  371  chmosd 777 * -R
+  372  sudo chmod 777 * -R
+  373  clear
+  374  exit
+  375  cd ..
+  376  ls
+  377  cd Documentos/
+  378  mkdir laravel
+  379  cd laravel/
+  380  git clone https://github.com/anthonygore/vue-js-laravel-ssr
+  381  cd vue-js-laravel-ssr/
+  382  cp .env.example .env
+  383  composer install
+  384  npm i
+  385  npm audit fix --force
+  386  npm i -g npm
+  387  npm i --save-dev vue-router
+  388  clear
+  389  code .
+  390  cd ..
+  391  rm vue-js-laravel-ssr/ -R
+  392  sudo su
+  393  clear
+  394  cd /var/www/html/
+  395  cd apilaravel/laravel/
+  396  code .
+  397  exit
+  398  php artisan serve
+  399  npm run watch
+  400  code .
+  401  npm run watch
+  402  exit
+  403  php artisan serve
+  404  exit
+  405  cd /home/warlock/Documentos/laravel/
+  406  git clone https://github.com/lanwilds/laravel-nuxtify.git
+  407  cd laravel-nuxtify/
+  408  ls
+  409  cp .env.example .env
+  410  php artisan key:generate
+  411  composert install
+  412  composer install
+  413  php artisan key:generate
+  414  npm i
+  415  php artisan jwt:secret
+  416  npm audit fix
+  417  npm start
+  418  nano /home/warlock/.npm/_logs/2020-07-27T16_14_20_686Z-debug.log
+  419  npm start
+  420  nano /home/warlock/.npm/_logs/2020-07-27T16_14_20_686Z-debug.log
+  421  npm run dev
+  422  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  423  npm start
+  424  npm build
+  425  npm run-script build
+  426  clear
+  427  npm update
+  428  npm run-script build
+  429  npm i
+  430  npm run-script build
+  431  npm start
+  432  npm run-script build
+  433  clear
+  434  exit
+  435  code .
+  436  ls
+  437  cd database/
+  438  ls
+  439  cd migrations/
+  440  ls
+  441  xs ..
+  442  cd ..
+  443  php artisan jwt:secret
+  444  php artisan migrate
+  445  cd ..
+  446  php artisan migrate
+  447  clear
+  448  php artisan serve
+  449  exit
+  450  php artisan migrate
+  451  php artisan migrate -v
+  452  exit
+  453  composer create-project --prefer-dist cretueusebiu/laravel-nuxt ofm2
+  454  cd ofm2
+  455  code .
+  456  php artisan mgrate
+  457  php artisan migrate::reset
+  458  php artisan migrate:reset
+  459  npm run dev
+  460  nano /home/warlock/.npm/_logs/2020-07-27T18_10_33_346Z-debug.log
+  461  npm run dev --verbose
+  462  npm i
+  463  npm run dev 
+  464  npm i
+  465  npm run dev 
+  466  npm run build
+  467  php artisan serve
+  468  cd /var/www/html/
+  469  laravel new ofm
+  470  composer global require laravel/installer
+  471  laravel new ofm
+  472  composer create-project --prefer-dist laravel/laravel ofm
+  473  cd src/
+  474  ld
+  475  ls
+  476  cd assets/
+  477  ls
+  478  cd img/
+  479  ls
+  480  cd servicios/
+  481  ls
+  482  code .
+  483  ping 8.8.8.8
+  484  exit
+  485  clear
+  486  cls
+  487  clear
+  488  cd ..
+  489  history
+  490  composer create-project --prefer-dist laravel/laravel pruebas
+  491  clear
+  492  cd ofm
+  493  ls
+  494  nano composer.
+  495  nano composer.json 
+  496  composer install
+  497  code .
+  498  php artisan vendor:publish --provider="SEO\SeoServiceProvider"
+  499  composer update
+  500  clear
+  501  ping 8.8.8.8
+  502  cd ..
+  503  ls
+  504  cd angulartorche/
+  505  ng serve
+  506  code .
+  507  ng serve
+  508  ng build
+  509  ng serve
+  510  npm install vivus
+  511  npm audit fix
+  512  npm i -S vivus and npm i -D #types/vivus
+  513  ng 
+  514  ng generate component components\sgv\arqui
+  515  ng generate component components/sgv/arqui
+  516  ng generate component components/svg/arqui
+  517  cd ..
+  518  cd gssauber/
+  519  code .
+  520  npm run serve
+  521  cd ..
+  522  cd ofm
+  523  composer update
+  524  ng serve
+  525  g serve
+  526  ng serve
+  527  ls
+  528  ng serve
+  529  ng
+  530  clear
+  531  sudo su
+  532  ng g component components/svg/urnas
+  533  ng g component components/svg/esculturas
+  534  ng g component components/svg/taller
+  535  ng g component components/svg/logo
+  536  ng g component components/svg/logod
+  537  ng g component components/svg/logol
+  538  ng serve
+  539  ng serve --host 0.0.0.0
+  540  ifconfig
+  541  sudo apt install net-tools
+  542  ifconfig
+  543  ng serve
+  544  ng build
+  545  ng serve
+  546  ng build
+  547  ifconfig
+  548  clear
+  549  ng add @ng-toolkit/universal
+  550  npm install --save-dev webpack-cli
+  551  npm audit fix --force
+  552  clear
+  553  npm run build:prod
+  554  sudo apt-get install  unrar
+  555  npx tailwindcss build src/estilos.css -o public/output.css
+  556  ls
+  557  npx tailwindcss build src/style.css -o public/style.css
+  558  cd /home/warlock/Documentos/exe/
+  559  ls *.rar
+  560  unrar 'SAGA Metal Slug.rar'
+  561  clear
+  562  ls *.rar
+  563  unrar x SAGA_Metal_Slug.rar 
+  564  cd /var/www/html/ofm
+  565  code .
+  566  cd ..
+  567  cd tailwind/
+  568  ls
+  569  code .
+  570  ls
+  571  cp 'Vue js 2 Completo ¡De 0 a Experto! + Firebase + Node [MEVN]' /home/warlock/Vídeos/ -R
+  572  cp  'Laravel y Vue Js avanzado' /home/warlock/Vídeos/ -R
+  573  cd codigo\ facilito/
+  574  ls
+  575  exit
+  576  sudo apt-get install gcp
+  577  clear
+  578  gcp 'Diseño web desde 0. Aprende PUG desde cero. Edición 2020'  /home/warlock/Vídeos/ -R
+  579  cp 'Diseño web desde 0. Aprende PUG desde cero. Edición 2020'  /home/warlock/Vídeos/ -R
+  580  exit
+  581  gcp -rv house/ /home/warlock/Vídeos/
+  582  cd /var/www/html/ofm
+  583  php artisan -V
+  584  nano composer.
+  585  nano composer.json 
+  586  cd ../otros/
+  587  ls
+  588  cd oaxaca4meetings
+  589  php artisan -v
+  590  ls
+  591  cd laravel/
+  592  php artisan -v
+  593  clear
+  594  php artisan -V
+  595  php artisan serve
+  596  sudo spt-get upgrade dist
+  597  sudo apt-get upgrade dist
+  598  php artisan update
+  599  composer update
+  600  composer require artesaos/seotools
+  601  composer require spatie/laravel-sitemap
+  602  code .
+  603  php artisan serve
+  604  code .
+  605  php artisan serve
+  606  exit
+  607  code .
+  608  exit
+  609  cd ..
+  610  cd oaxaca4meetings1
+  611  code .
+  612  php artisan serve --host 0.0.0.0
+  613  cd layouts/
+  614  exit
+  615  code .
+  616  cd layouts/
+  617  php artisan serve --host
+  618  ls
+  619  cd ..
+  620  ls
+  621  cd ..
+  622  cd oaxaca4meetings
+  623  cd laravel/
+  624  code .
+  625  php artisan serve --host 0.0.0.0
+  626  exit
+  627  ifconfig
+  628  exit
+  629  cd ../../oaxaca4meetings1/
+  630  ls
+  631  Shell
+  632  sudo nano /usr/share/phpmyadmin/libraries/sql.lib.php
+  633  sudo add-apt-repository ppa:phpmyadmin/ppa
+  634  sudo apt upgrade
+  635  sudo systemctl restart apache2
+  636  clear
+  637  ls
+  638  exit
+  639  npm run watch
+  640  exit
+  641  sudo su
+  642  clear
+  643  php artisan migrate
+  644  code .
+  645  php artisan migrate
+  646  clear
+  647  php artisan make:controler PublicacionesController
+  648  php artisan controller PublicacionesController
+  649  php artisan make:controller PublicacionesController
+  650  code .
+  651  clearr
+  652  clear
+  653  php artisan serve
+  654  php artisan serve --host 0.0.0.0
+  655  php artisan make:controller API/InformacionController
+  656  php artisan route:list 
+  657  clear
+  658  php artisan make:controller ViajesController
+  659  ifconfig
+  660  code .
+  661  composer require krlove/eloquent-model-generator --dev
+  662  code .
+  663  nano .env
+  664  php artisan krlove:generate:model Models/PublicacionesModels --tbl_publicaciones
+  665  php artisan krlove:generate:model Models/PubImageModels tbl_images_publicaciones
+  666  php artisan
+  667  clear
+  668  php artisan krlove:generate:model Models/PublicacionesModels --table-name=tbl_publicaciones
+  669  php artisan krlove:generate:model Models/PubImageModels --table-name=tbl_images_publicaciones
+  670  php artisan krlove:generate:model Models/PublicacionesModels --table-name=tbl_publicaciones
+  671  clear
+  672  ls
+  673  chmod app/
+  674  php artisan make:controller FuncionesController
+  675  cd ../../oaxaca4meetings1/
+  676  code .
+  677  npm run watch
+  678  cd ..
+  679  cd ,,
+  680  cd ..
+  681  ls
+  682  cd angulartorche/
+  683  code-insiders .
+  684  npm install vivus
+  685  npm audit fix --force
+  686  npm i -D #types/vivus
+  687  clear
+  688  ng serve
+  689  nano /tmp/ng-LiW8fX/angular-errors.log
+  690  ng serve
+  691  reboot
+  692  ng serve
+  693  npm i -S vivus and npm i -D #types/vivus
+  694  npm audit fix
+  695  ng serve
+  696  code-insiders .
+  697  ng serve
+  698  npm uninstall --save-dev angular-cli
+  699  npm install --save-dev @angular/cli@latest
+  700  npm install
+  701  ng --version
+  702  ng serve
+  703  ng update
+  704  ng serve
+  705  ng update @angular/core@8 @angular/cli@8
+  706  clear
+  707  mv node_modules .nodeModule
+  708  npm i
+  709  ng serve
+  710  exit
+  711  code-insiders .
+  712  ng serve
+  713  exit
+  714  code-insiders .
+  715  npm install bootstrap jquery @popperjs/core
+  716  exit
+  717  npm install popper.js --save
+  718  exit
+  719  ng serve --host 0.0.0.0
+  720  npm install jquery — save
+  721  npm install jquery -- save
+  722  ng serve --host 0.0.0.0
+  723  ng build
+  724  exit
+  725  ng build --prod
+  726  ng build
+  727  ng build --prod --force
+  728  ng build --prod
+  729  cd ..
+  730  cd gssauber/
+  731  ls
+  732  nano package.json 
+  733  exit
+  734  code-insiders .
+  735  ng serve
+  736  ng build --prod
+  737  ng serve
+  738  ls
+  739  cd src/
+  740  ls
+  741  cd assets/
+  742  ls
+  743  cd img/
+  744  ls
+  745  cd marcas/
+  746  ls
+  747  cd gallery/
+  748  ls
+  749  ng serve
+  750  code-insiders .
+  751  sudo su
+  752  exit
+  753  adb devices
+  754  exit
+  755  exit
+  756  adb usb
+  757  adb devices
+  758  lsusb
+  759  sudo vi /etc/udev/rules.d/51-android.rules
+  760  code .
+  761  php artisan serve --host 0.0.0.0
+  762  dd
+  763  lsblk
+  764  ls
+  765  cd Documentos/
+  766  ls
+  767  umount
+  768  umount sdb
+  769  umount /dev/sdb
+  770  mkfs.vfat -F 32 /dev/sdb -I
+  771  sudo mkfs.vfat -F 32 /dev/sdb -I
+  772  sudo su
+  773  exit
+  774  cd /home/warlock/Documentos/
+  775  ls
+  776  eit
+  777  exit
+  778  mv FIEL_NEVO9201094NA_20180913125541/ /home/warlock/Documentos/bk_ubuntu/ -R
+  779  mv FIEL_NEVO9201094NA_20180913125541/ /home/warlock/Documentos/bk_ubuntu/ 
+  780  cp Documentos/ /home/warlock/Documentos/bk_ubuntu/ 
+  781  mv FIEL_NEVO9201094NA_20180913125541/ /home/warlock/Documentos/bk_ubuntu/ -R
+  782  cp Documentos/ /home/warlock/Documentos/bk_ubuntu/ -R
+  783  exit
+  784  sudo su
+  785  cd ..
+  786  cp html/ /home/warlock/Documentos/bk_ubuntu/
+  787  cp html/ /home/warlock/Documentos/bk_ubuntu/ -r
+  788  exit
+  789  cp paso* /home/warlock/Documentos/bk_ubuntu/
+  790  cp *.txt /home/warlock/Documentos/bk_ubuntu/
+  791  cp *.docx /home/warlock/Documentos/bk_ubuntu/
+  792  cp *.png /home/warlock/Documentos/bk_ubuntu/
+  793  cp nesaaa /home/warlock/Documentos/bk_ubuntu/
+  794  cp apiecommers /home/warlock/Documentos/bk_ubuntu/
+  795  clear
+  796  cp Descargas/ /home/warlock/Documentos/bk_ubuntu/ -R
+  797  cp Música/ /home/warlock/Documentos/bk_ubuntu/ -R
+  798  cp Escritorio/ /home/warlock/Documentos/bk_ubuntu/ -R
+  799  ls
+  800  cp Vídeos/ /home/warlock/Documentos/bk_ubuntu/ -R
+  801  cp Imágenes/ /home/warlock/Documentos/bk_ubuntu/ -R
+  802  cp dw /home/warlock/Documentos/bk_ubuntu/ -R
+  803  cp dwhelper/ /home/warlock/Documentos/bk_ubuntu/ -R
+  804  cp respaldo/ /home/warlock/Documentos/bk_ubuntu/ -R
+  805  sudo su
+  806  npm install vuelidate --save
+  807  npm i vue-materialize
+  808  code .
+  809  php artisan serve
+  810  php artisan serve --host 0.0.0.0
+  811  npm run watch
+  812  exit
+  813  npm i vue-drag-drop
+  814  clear
+  815  npm i vuedraggable
+  816  php aartisan serve
+  817  php artisan serve
+  818  php artisan serve --host 0.0.0.0
+  819  exit
+  820  code .
+  821  npm run watch
+  822  exit
+  823  git init
+  824  rm .git -R
+  825  git init
+  826  git
+  827  cd ..
+  828  exit
+  829  git init
+  830  git add
+  831  git add .
+  832  git commit -m 'mi primer commit kiintos'
+  833  git remote add origin https://github.com/oswaldovaldez1/kiintos.git
+  834  git remote -v origin
+  835  git remote set-url origin https://github.com/oswaldovaldez1/kiintos.git
+  836  git push -u master
+  837  git remote set-url origin https://github.com/oswaldovaldez1/kiintos.gitgit config --global user.name
+  838  git config --global user
+  839  git config --global user.name
+  840  git config --global user.email
+  841  git config --global user.name "oswaldovaldez1"
+  842  git push -u master
+  843  git push origin master
+  844  cd ..
+  845  mkdir back
+  846  git clone https://github.com/oswaldovaldez1/kiintos.git
+  847  cd back/
+  848  git clone https://github.com/oswaldovaldez1/kiintos.git
+  849  git add .
+  850  git init
+  851  cd kiintos/
+  852  git add .
+  853  git commit -m "first commit kiintos"
+  854  git push -u origin master
+  855  git add .
+  856  git push origin master
+  857  sudo snap install gitkraken --classic
+  858  exit
+  859  php artisan serve
+  860  exxxit
+  861  exit
+  862  code .
+  863  npm run serve
+  864  npm run build
+  865  exit
+  866  cd ..
+  867  cd oaxaca4meetings1
+  868  code .
+  869  php artisan make:mail correo
+  870  npm run watch
+  871  la
+  872  cd layouts/
+  873  exit
+  874  cd ..
+  875  cd angulartorche
+  876  code .
+  877  cd ..
+  878  cd apilaravel/
+  879  cd laravel/
+  880  ls
+  881  code .
+  882  cd ..
+  883  cd o
+  884  cd otros/
+  885  cd oaxaca4meetings
+  886  cd lara/
+  887  code  .
+  888  clear
+  889  php artisan publish
+  890  php artisan vendor:publish
+  891  php artisan make:mail Correo
+  892  clear
+  893  php artisan make:controller API/MailController
+  894  php artisan serve
+  895  php artisan serve -v
+  896  cd ..
+  897  rm lara laravel
+  898  mv lara laravel
+  899  cd laravel/
+  900  pap artisan serve
+  901  php artisan serve
+  902  php -v
+  903  composer dump-autoload
+  904  php artisan vendor:publish --tag=flare-config
+  905  clear
+  906  npm run watch
+  907  npm run 
+  908  npm run prod
+  909  php artisan route:list
+  910  valet
+  911  exit
+  912  sudo apt-get remove docker docker-engine docker.io containerd runc
+  913  sudo apt autoremove
+  914  clear
+  915  sudo apt-get install libnss3-tools jq xsel
+  916  composer global require cpriego/valet-linux
+  917  nano ~/.bashrc
+  918  sudo service apache2 stop
+  919  3
+  920  valet install
+  921  nano ~/.zshrc
+  922  nano ~/.bashrc
+  923  clear
+  924  cd /home/warlock/.config/composer
+  925  ls
+  926  cd vendor/
+  927  cd bin/
+  928  ls
+  929  nano ~/.bashrc
+  930  nano ~/.zshrc
+  931  valet
+  932  nano ~/.zshrc
+  933  nano ~/.bashrc
+  934  exit
+  935  sudo">sudo update-rc.d apache2 disable
+  936  Fuente: https://www.enmimaquinafunciona.com/pregunta/24073/como-deshabilitar-el-servidor-apache2-de-auto-arranque-durante-el-arranque
+  937  sudo">sudo update-rc.d apache2 disable
+  938  ;
+  939  exit
+  940  exit
+  941  cd /var/www/html/
+  942  laravel
+  943  laravel new graphql
+  944  composer create-project --prefer-dist laravel/laravel graphql-laravel
+  945  cd graphql-laravel/
+  946  clear
+  947  code .
+  948  clear
+  949  php artisan serve
+  950  exit
+  951  sudo apt-get update
+  952  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+  953  udo apt-key fingerprint 0EBFCD88
+  954  sudo apt-key fingerprint 0EBFCD88
+  955  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  956     $(lsb_release -cs) \
+  957     stable"
+  958  sudo apt-get update
+  959  sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  960   $(lsb_release -cs) \
+  961   stable"
+  962  docker
+  963  cd  /etc/apt/
+  964  ls
+  965  nano sources.list
+  966  sudo nano sources.list
+  967  clear
+  968  sudo apt-get update
+  969  clear
+  970  sudo snap install docker
+  971  docker
+  972  clear
+  973  exit
+  974  composer require nuwave/lighthouse
+  975  composer require nuwave/lighthouse laravel/passport joselfonseca/lighthouse-graphql-passport-auth
+  976  composer require krlove/eloquent-model-generator --dev
+  977  php artisan migrate
+  978  clearr
+  979  clear
+  980  php artisan migrate --help
+  981  php artisan migrate fresh
+  982  php artisan migrate:refresh
+  983  php artisan migrate:reset
+  984  php artisan migrate:refresh --seed
+  985  php artisan migrate:fresh --seed
+  986  php artisan passport:install
+  987  php artisan vendor:publish --provider="Nuwave\Lighthouse\LighthouseServiceProvider" --tag=schema
+  988  php artisan vendor:publish 
+  989  php artisan vendor:publish --provider="Joselfonseca\LighthouseGraphQLPassport\Providers\LighthouseGraphQLPassportServiceProvider"
+  990  composer require mll-lab/laravel-graphql-playground
+  991  php artisan make:model Acount -m
+  992  php artisan migrate
+  993  composer require fruitcake/laravel-cors
+  994  php artisan vendor:publish
+  995  clear
+  996  close
+  997  exit
+  998  php artisan route:list 
+  999  clear
+ 1000  php artisan route:list 
+ 1001  clear
+ 1002  php artisan route:list 
+ 1003  clear
+ 1004  php artisan serve
+ 1005  npm install --save axios vue-axios
+ 1006  npm i vue-session
+ 1007  npm install js-sha256
+ 1008  npm i firebase
+ 1009  npm audit fix
+ 1010  clear
+ 1011  npm run watch
+ 1012  exit
+ 1013  ~/.composer/vendor/bin/valet install
+ 1014  php artisan serve
+ 1015  cd /var/www/html/graphql-laravel/
+ 1016  php artisan serve
+ 1017  php artisan serve
+ 1018  php artisan ui bootstrap --auth
+ 1019  clear
+ 1020  npm run watch
+ 1021  clear
+ 1022  php artisan route:list
+ 1023  clear
+ 1024  php artisan route:list
+ 1025  clear
+ 1026  php artisan route:list
+ 1027  clear
+ 1028  php artisan route:list
+ 1029  clear
+ 1030  php artisan route:list
+ 1031  clear
+ 1032  php artisan make:model Role -m
+ 1033  php artisan migrate
+ 1034  php artisan make:migration create_role_user_table
+ 1035  php artisan make:seeder RoleTableSeeder
+ 1036  php artisan migrate --seed
+ 1037  clear
+ 1038  php artisan route:list
+ 1039  php artisan vendor:publish
+ 1040  clear
+ 1041  php artisan make:auth
+ 1042  composer require laravel/ui
+ 1043  php artisan ui vue --auth
+ 1044  clear
+ 1045  npm install
+ 1046  npm i vue-wysiwyg 
+ 1047  npm audit fix
+ 1048  php artisan route:list
+ 1049  clear
+ 1050  php artisan route:list
+ 1051  clear
+ 1052  php artisan route:list
+ 1053  exit
+ 1054  php artisan serve
+ 1055  exit
+ 1056  cd ..
+ 1057  cd otros/
+ 1058  cd oaxaca4meetings/laravel/
+ 1059  php artisam migrate --seed
+ 1060  php artisan migrate --seed
+ 1061  clear
+ 1062  cd ..
+ 1063  cd apilaravel/
+ 1064  laravel
+ 1065  cd laravel/
+ 1066  code .
+ 1067  cd ..
+ 1068  cd..
+ 1069  cd ..
+ 1070  cd otros/
+ 1071  cd oaxaca4meetings
+ 1072  cd laravel/
+ 1073  clear
+ 1074  omposer require laravel/ui
+ 1075  composer require laravel/ui
+ 1076  composer update
+ 1077  composer require laravel/ui
+ 1078  clear
+ 1079  composer install
+ 1080  composer update
+ 1081  composer require laravel/ui
+ 1082  clear
+ 1083  composer require laravel/ui "^1.0" --dev
+ 1084  php artisan ui vue --auth
+ 1085  clear
+ 1086  npm run watch
+ 1087  clear
+ 1088  npm run watch
+ 1089  clear
+ 1090  npm run watch
+ 1091  npm i
+ 1092  npm audit fix
+ 1093  npm --force
+ 1094  npm audit fix --force
+ 1095  npm run watch
+ 1096  exit
+ 1097  code-insiders .
+ 1098  ng serve
+ 1099  clear
+ 1100  ng build
+ 1101  code-insiders .
+ 1102  ng serve
+ 1103  ng build
+ 1104  ng serve
+ 1105  ng build
+ 1106  php artisan migrate
+ 1107  cd ..
+ 1108  cd otros/oaxaca4meetings/laravel/
+ 1109  code .
+ 1110  npm run watch
+ 1111  sudo resolvconf -u
+ 1112  cd /etc/
+ 1113  nano *.conf
+ 1114  ls *.conf
+ 1115  nano resolv.conf
+ 1116  cd resolvconf/
+ 1117  ls
+ 1118  cd /
+ 1119  cd /run/
+ 1120  ls
+ 1121  cd /etc/resolvconf/
+ 1122  ls
+ 1123  cd update
+ 1124  cd update.d/
+ 1125  ls
+ 1126  cd ..
+ 1127  cd /
+ 1128  ifconfig
+ 1129  clear
+ 1130  cd /etc/
+ 1131  mv resolv.conf .resolv.conf
+ 1132  sudo mv resolv.conf .resolv.conf
+ 1133  sudo su
+ 1134  sudo mv .resolv.conf resolv.conf
+ 1135  nano resolv.conf
+ 1136  sudo su
+ 1137  opt-get upgrade
+ 1138  apt-get upgrade
+ 1139  sudo spt-get upgrade
+ 1140  sudo apt-get upgrade
+ 1141  sudo dpkg --configure -a
+ 1142  sudo apt-get upgrade
+ 1143  sudo su
+ 1144  clear
+ 1145  exit
+ 1146  code .
+ 1147  cd /home/warlock/Descargas/
+ 1148  ls .deb
+ 1149  ls *.deb
+ 1150  sudo su
+ 1151  exit
+ 1152  sudo su
+ 1153  exit
+ 1154  php artisan route:list
+ 1155  clear
+ 1156  php artisan serve
+ 1157  cd /home/warlock/Descargas/
+ 1158  clear
+ 1159  sudo du
+ 1160  sudo su
+ 1161  npm run watch
+ 1162  exit
+ 1163  php artisan serve
+ 1164  php artisan route:list
+ 1165  clear
+ 1166  php artisan route:list
+ 1167  code .
+ 1168  sudo su
+ 1169  cd ../../../
+ 1170  cd gssauber/
+ 1171  code .
+ 1172  ng serve
+ 1173  npm serve
+ 1174  npm start
+ 1175  nano package.json 
+ 1176  clear
+ 1177  npm serve
+ 1178  npm server
+ 1179  nano package.json 
+ 1180  cleR
+ 1181  clear
+ 1182  vue-cli-service serve
+ 1183  ls
+ 1184  npm serve
+ 1185  npm serve -l
+ 1186  Cclear clear
+ 1187  clear
+ 1188  npm run serve
+ 1189  code .
+ 1190  npm run serve
+ 1191  code .
+ 1192  npm run serve
+ 1193  npm run build
+ 1194  npm run watch
+ 1195  php artisan serve
+ 1196  cd /home/warlock/Documentos/
+ 1197  mkdir Apps
+ 1198  cd Apps/
+ 1199  git clone https://github.com/electron/electron-api-demos
+ 1200  cd electron-api-demos/
+ 1201  npm i
+ 1202  npm start
+ 1203  php artisan serve
+ 1204  history>paso.tct
